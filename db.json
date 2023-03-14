@@ -1,0 +1,288 @@
+{
+    "users": [{
+            "id": 1,
+            "name": "Abood Saafeen",
+            "email": "Abood@gmail.com",
+            "password": "1234567",
+            "jobTitle": "Front End developer",
+            "overview": "Frontend Developer | React js | I help you build modern and responsive websites that engage users and drive results and nothing",
+            "hourlyRate": "100"
+        },
+        {
+            "id": 2,
+            "name": "de.tareq",
+            "email": "ds@g.com",
+            "password": "1234567",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0
+        },
+        {
+            "id": 3,
+            "name": "Kelly Kidd",
+            "email": "vehyp@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0
+        },
+        {
+            "id": 4,
+            "name": "Yousef Sheikh",
+            "email": "yousefhusam@gmail.com",
+            "password": "yousefsh",
+            "jobTitle": "CEO",
+            "overview": "",
+            "hourlyRate": 0
+        },
+        {
+            "id": 5,
+            "name": "Yousef AboEisha",
+            "email": "yousefrashad@gmail.com",
+            "password": "yousefab",
+            "jobTitle": "CFO",
+            "overview": "",
+            "hourlyRate": 0
+        },
+        {
+            "id": 6,
+            "name": "Test User",
+            "email": "test@test.com",
+            "password": "test123",
+            "jobTitle": "CFO",
+            "overview": "",
+            "hourlyRate": 0
+        }
+    ],
+    "jobs": [{
+            "id": 1,
+            "topic": "Web Page Development",
+            "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
+            "body": "Hey! Create a web Landing page by using recommended Languages of programming and design landing page like this type of Template which I show you in the URL. Attach the Logo that I provided to you in the attached profile.Use logo 1 for Header and favicon and logo 2 for Footer.",
+            "proposals": "25+",
+            "payment": "Payment verified",
+            "location": "United States",
+            "level": "intermediate"
+        },
+        {
+            "id": 2,
+            "topic": "Use vue3 and html table to create and style a table",
+            "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
+            "body": "use vue3 and html table to create and style a table . data will be given to you. you create html table with the data. format of the table will be given.",
+            "proposals": "20 to 50",
+            "payment": "Payment verified",
+            "location": "world wide",
+            "level": "intermediate"
+        },
+        {
+            "id": 3,
+            "topic": "Fix search bar to add drop down preset values",
+            "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
+            "body": "My search bar searches a json api. Just text input now, i would like to add a dropdown with some preset values user can choose in addition to search that is already working. Shouldnt take long.",
+            "proposals": "50+",
+            "payment": "Payment verified",
+            "location": "United States",
+            "level": "Entry level"
+        },
+        {
+            "id": 4,
+            "topic": "Create html email for a simple feedback email",
+            "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
+            "body": "We absolutely loved having you in our studio, we hoped you loved your day with us too.To ensure we are delivering the best photography experience to our cherished clients we are asking you for any feedback on your session.Please see the link below to leave your feedback.",
+            "proposals": "35",
+            "payment": "Payment verified",
+            "location": "Australia",
+            "level": "expert"
+        },
+        {
+            "id": 5,
+            "topic": "Remake my landing page to some no-code template",
+            "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
+            "body": "Hello I have a webpage made in wordpress. I need someone to create template for TeleportHQ or similar page I can transform my page onto. My current website is vciso.cz",
+            "proposals": "25+",
+            "payment": "Payment verified",
+            "location": "Czech Republic",
+            "level": "intermediate"
+        },
+        {
+            "id": 6,
+            "topic": "Create a web landing page",
+            "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
+            "body": "Hey! Create a web Landing page by using recommended Languages of programming and design landing page like this type of Template which I show you in the URL. Attach the Logo that I provided to you in the attached profile.Use logo 1 for Header and favicon and logo 2 for Footer.",
+            "proposals": "25+",
+            "payment": "Payment verified",
+            "location": "United States",
+            "level": "Entry level"
+        },
+        {
+            "id": 7,
+            "topic": "Create a styled HTML table using Vue3",
+            "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
+            "body": "Use vue3 and html table to create and style a table . data will be given to you. you create html table with the data. format of the table will be given.",
+            "proposals": "20 to 50",
+            "payment": "Payment verified",
+            "location": "world wide",
+            "level": "intermediate"
+        },
+        {
+            "id": 8,
+            "topic": "Add preset values dropdown to a search bar",
+            "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
+            "body": "My search bar searches a json api. Just text input now, i would like to add a dropdown with some preset values user can choose in addition to search that is already working. Shouldnt take long.",
+            "proposals": "50+",
+            "payment": "Payment verified",
+            "location": "United States",
+            "level": "expert"
+        },
+        {
+            "id": 9,
+            "topic": "Photography Session Feedback",
+            "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
+            "body": "We absolutely loved having you in our studio, we hoped you loved your day with us too.To ensure we are delivering the best photography experience to our cherished clients we are asking you for any feedback on your session.Please see the link below to leave your feedback.",
+            "proposals": "35",
+            "payment": "Payment verified",
+            "location": "Australia",
+            "level": "expert"
+        },
+        {
+            "id": 10,
+            "topic": "Create a TeleportHQ template for Wordpress website",
+            "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
+            "body": "Hello I have a webpage made in wordpress. I need someone to create template for TeleportHQ or similar page I can transform my page onto. My current website is vciso.cz",
+            "proposals": "25+",
+            "payment": "Payment verified",
+            "location": "Czech Republic",
+            "level": "expert"
+        },
+        {
+            "id": 11,
+            "topic": "Create a web landing page",
+            "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
+            "body": "Hey! Create a web Landing page by using recommended Languages of programming and design landing page like this type of Template which I show you in the URL. Attach the Logo that I provided to you in the attached profile.Use logo 1 for Header and favicon and logo 2 for Footer.",
+            "proposals": "25+",
+            "payment": "Payment verified",
+            "location": "United States",
+            "level": "expert"
+        },
+        {
+            "id": 12,
+            "topic": "12",
+            "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
+            "body": "use vue3 and html table to create and style a table . data will be given to you. you create html table with the data. format of the table will be given.",
+            "proposals": "20 to 50",
+            "payment": "Payment verified",
+            "location": "world wide",
+            "level": "expert"
+        },
+        {
+            "id": 13,
+            "topic": "13",
+            "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
+            "body": "My search bar searches a json api. Just text input now, i would like to add a dropdown with some preset values user can choose in addition to search that is already working. Shouldnt take long.",
+            "proposals": "less than 5",
+            "payment": "Payment verified",
+            "location": "United States",
+            "level": "expert"
+        },
+        {
+            "id": 14,
+            "topic": "14",
+            "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
+            "body": "We absolutely loved having you in our studio, we hoped you loved your day with us too.To ensure we are delivering the best photography experience to our cherished clients we are asking you for any feedback on your session.Please see the link below to leave your feedback.",
+            "proposals": "20 to 50",
+            "payment": "Payment verified",
+            "location": "Australia",
+            "level": "expert"
+        },
+        {
+            "id": 15,
+            "topic": "15",
+            "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
+            "body": "Hello I have a webpage made in wordpress. I need someone to create template for TeleportHQ or similar page I can transform my page onto. My current website is vciso.cz",
+            "proposals": "25+",
+            "payment": "Payment verified",
+            "location": "Czech Republic",
+            "level": "expert"
+        },
+        {
+            "id": 16,
+            "topic": "16",
+            "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
+            "body": "Hello I have a webpage made in wordpress. I need someone to create template for TeleportHQ or similar page I can transform my page onto. My current website is vciso.cz",
+            "proposals": "20 to 50",
+            "payment": "Payment verified",
+            "location": "Czech Republic",
+            "level": "expert"
+        },
+        {
+            "id": 17,
+            "topic": "Graphic Design",
+            "payInfo": "Fixed-price - Intermediate - Est. Budget: $100 - Posted 1 hour ago",
+            "body": "I am looking for a graphic designer to create a logo for my new business. The logo should be modern and eye-catching, and should incorporate the colors blue and green.",
+            "proposals": "10 to 15",
+            "payment": "Payment verified",
+            "location": "Canada",
+            "level": "expert"
+        },
+        {
+            "id": 18,
+            "topic": "Content Writing",
+            "payInfo": "Hourly - Entry level level - Est. Time: More than 6 months - Posted 2 hours ago",
+            "body": "I need a content writer to create blog posts for my website. The posts should be well-researched and well-written, and should be optimized for SEO. Topics will include technology, business, and marketing.",
+            "proposals": "5 to 10",
+            "payment": "Payment verified",
+            "location": "United Kingdom",
+            "level": "expert"
+        },
+        {
+            "id": 19,
+            "topic": "Mobile App Development",
+            "payInfo": "Fixed-price - Expert - Est. Budget: $10,000 - Posted 3 hours ago",
+            "body": "I am looking for a mobile app developer to create an app for my business. The app should be available for both iOS and Android, and should have a modern and intuitive design. It should allow users to easily book appointments and make payments.",
+            "proposals": "5 to 10",
+            "payment": "Payment verified",
+            "location": "United States",
+            "level": "expert"
+        },
+        {
+            "id": 20,
+            "topic": "Video Editing",
+            "payInfo": "Hourly - Intermediate - Est. Time: 1 to 3 months - Posted 4 hours ago",
+            "body": "I have several hours of raw video footage that I need edited into a promotional video for my business. The video should be no longer than 2 minutes and should be visually appealing and engaging.",
+            "proposals": "less than 5",
+            "payment": "Payment verified",
+            "location": "Australia",
+            "level": "expert"
+        },
+        {
+            "id": 21,
+            "topic": "Social Media Marketing",
+            "payInfo": "Hourly - Intermediate - Est. Time: Less than 1 month - Posted 5 hours ago",
+            "body": "I need a social media marketing expert to help me promote my new product. The expert should be familiar with Facebook and Instagram advertising, and should have experience creating effective ad campaigns.",
+            "proposals": "5 to 10",
+            "payment": "Payment verified",
+            "location": "India",
+            "level": "expert"
+        },
+        {
+            "id": 22,
+            "topic": "Data Analysis",
+            "payInfo": "Fixed-price - Intermediate - Est. Budget: $500 - Posted 6 hours ago",
+            "body": "I am looking for a web developer to create a simple landing page for my business. The page should be responsive and optimized for SEO, and should include a contact form.",
+            "proposals": "15 to 20",
+            "payment": "Payment verified",
+            "location": "Spain",
+            "level": "expert"
+        },
+        {
+            "id": 23,
+            "topic": "Create a React js Blog for Medical Company",
+            "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
+            "body": "Hey! Create a web Landing page by using recommended Languages of programming and design landing page like this type of Template which I show you in the URL. Attach the Logo that I provided to you in the attached profile.Use logo 1 for Header and favicon and logo 2 for Footer.",
+            "proposals": "20 to 50",
+            "payment": "Payment verified",
+            "location": "United States",
+            "level": "Entry level"
+        }
+    ]
+}
