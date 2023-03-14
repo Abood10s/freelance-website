@@ -1,13 +1,16 @@
 import React, { useDeferredValue, useState } from "react";
 import { useDispatch } from "react-redux";
 import styled from "styled-components";
+import { Buttons } from "../../Modals/EditModal";
 import { EditField } from "../../redux/UserSlice";
+import PrimaryBtn from "../buttons/PrimaryBtn";
 
 export const Cont = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 3rem;
+  padding-bottom: 2em 1.5em;
 `;
 export const Input = styled.input`
   border-radius: 6px;
@@ -41,9 +44,13 @@ const UpdateTitle = ({ job }) => {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <button onClick={() => dispatch(EditField(1, "jobTitle", title))}>
-          update
-        </button>
+
+        <Buttons>
+          <PrimaryBtn
+            title="Save"
+            func={() => dispatch(EditField("jobTitle", title))}
+          />
+        </Buttons>
       </Edit>
     </Cont>
   );

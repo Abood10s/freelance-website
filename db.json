@@ -4,9 +4,9 @@
             "name": "Abood Saafeen",
             "email": "Abood@gmail.com",
             "password": "1234567",
-            "jobTitle": "Front End developer",
-            "overview": "Frontend Developer | React js | I help you build modern and responsive websites that engage users and drive results and nothing",
-            "hourlyRate": "100"
+            "jobTitle": "Front End Deveolper",
+            "overview": "Frontend Developer | React js | I help you build modern and responsive websites that engage users and drive results",
+            "hourlyRate": "10"
         },
         {
             "id": 2,
@@ -15,7 +15,7 @@
             "password": "1234567",
             "jobTitle": "",
             "overview": "",
-            "hourlyRate": 0
+            "hourlyRate": 14
         },
         {
             "id": 3,
@@ -24,7 +24,7 @@
             "password": "Pa$$w0rd!",
             "jobTitle": "",
             "overview": "",
-            "hourlyRate": 0
+            "hourlyRate": 12
         },
         {
             "id": 4,
@@ -33,7 +33,7 @@
             "password": "yousefsh",
             "jobTitle": "CEO",
             "overview": "",
-            "hourlyRate": 0
+            "hourlyRate": 35
         },
         {
             "id": 5,
@@ -42,16 +42,25 @@
             "password": "yousefab",
             "jobTitle": "CFO",
             "overview": "",
-            "hourlyRate": 0
+            "hourlyRate": 25
         },
         {
             "id": 6,
             "name": "Test User",
             "email": "test@test.com",
             "password": "test123",
-            "jobTitle": "CFO",
-            "overview": "",
-            "hourlyRate": 0
+            "jobTitle": "Back end Developer",
+            "overview": "haha",
+            "hourlyRate": "35"
+        },
+        {
+            "id": 7,
+            "name": "User",
+            "email": "user@user.com",
+            "password": "user123",
+            "jobTitle": "Asp.net Developer",
+            "overview": "Gaza Sky Geeks Graduate",
+            "hourlyRate": "35"
         }
     ],
     "jobs": [{
@@ -166,7 +175,7 @@
         },
         {
             "id": 12,
-            "topic": "12",
+            "topic": "Develop and maintain technical documentation for software applications.",
             "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
             "body": "use vue3 and html table to create and style a table . data will be given to you. you create html table with the data. format of the table will be given.",
             "proposals": "20 to 50",
@@ -176,7 +185,7 @@
         },
         {
             "id": 13,
-            "topic": "13",
+            "topic": "Test and debug software to ensure high-quality code and functionality.",
             "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
             "body": "My search bar searches a json api. Just text input now, i would like to add a dropdown with some preset values user can choose in addition to search that is already working. Shouldnt take long.",
             "proposals": "less than 5",
@@ -186,7 +195,7 @@
         },
         {
             "id": 14,
-            "topic": "14",
+            "topic": "Analyze user requirements and translate them into technical specifications.",
             "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
             "body": "We absolutely loved having you in our studio, we hoped you loved your day with us too.To ensure we are delivering the best photography experience to our cherished clients we are asking you for any feedback on your session.Please see the link below to leave your feedback.",
             "proposals": "20 to 50",
@@ -196,7 +205,7 @@
         },
         {
             "id": 15,
-            "topic": "15",
+            "topic": "Design and implement database structures to support applications and data analytics.",
             "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
             "body": "Hello I have a webpage made in wordpress. I need someone to create template for TeleportHQ or similar page I can transform my page onto. My current website is vciso.cz",
             "proposals": "25+",
@@ -206,7 +215,7 @@
         },
         {
             "id": 16,
-            "topic": "16",
+            "topic": "Collaborate with cross-functional teams to develop software solutions.",
             "payInfo": "Fixed-price - Entry level level - Est. Budget: $5 - Posted 28 minutes ago",
             "body": "Hello I have a webpage made in wordpress. I need someone to create template for TeleportHQ or similar page I can transform my page onto. My current website is vciso.cz",
             "proposals": "20 to 50",

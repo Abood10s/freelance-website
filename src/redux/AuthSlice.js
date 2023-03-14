@@ -34,7 +34,8 @@ export const handleAuth = (email, password) => async (dispatch) => {
       dispatch(setLoading());
       dispatch(setAuth(true));
       localStorage.setItem("id", `${res.data[0].id}`);
-      dispatch(setUser({ ...res.data[0] }));
+      dispatch(setUser(...res.data[0]));
+      console.log(...res.data[0]);
     } else {
       dispatch(setAuth(false));
     }

@@ -8,6 +8,7 @@ const MostRecent = lazy(() => import("../pages/MostRecent"));
 const SavedJobs = lazy(() => import("../pages/SavedJobs"));
 const Search = lazy(() => import("../pages/Search"));
 const LoginForm = lazy(() => import("../components/forms/loginform/LoginForm"));
+const Signup = lazy(() => import("../components/forms/Signupform"));
 
 export const PATHS = {
   SIGNUP: "/signup",
@@ -22,7 +23,7 @@ export const PATHS = {
 
 export const router = [
   { path: PATHS.LOGIN, element: <LoginForm /> },
-  { path: PATHS.SIGNUP, element: <LoginForm /> },
+  { path: PATHS.SIGNUP, element: <Signup /> },
 
   {
     path: "/",

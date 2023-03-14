@@ -9,8 +9,5 @@ export const FooterWrapper = styled.div`
   margin: 1rem auto;
   padding: 3em 0;
   border-radius: 8px;
-  position: fixed;
-  bottom: 0rem;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
 `;

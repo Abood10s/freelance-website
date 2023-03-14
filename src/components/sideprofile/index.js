@@ -16,19 +16,18 @@ import {
   Status,
   Wrap,
 } from "./style";
-import { useSelector } from "react-redux";
-
-const SideProfile = () => {
-  const { theUser } = useSelector((state) => state.user);
-  const { name, jobTitle } = theUser;
+import { Spinner } from "../../global/style";
+const SideProfile = ({ name, jobTitle }) => {
   return (
     <Side>
       <Avatar />
       <Info>
         <Link to="/profile" style={{ textDecoration: "none" }}>
-          <h4 style={{ textDecoration: "underline" }}>{name}</h4>
+          <h4 style={{ textDecoration: "underline" }}>
+            {name ? name : <Spinner />}
+          </h4>
         </Link>
-        <p>{jobTitle}</p>
+        <p>{jobTitle ? jobTitle : <Spinner />}</p>
       </Info>
       <Completeness>
         <h5>Profile Completeness:</h5>

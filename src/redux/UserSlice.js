@@ -38,7 +38,7 @@ export const getUserInfo = () => async (dispatch) => {
     dispatch(setLoading());
   }
 };
-export const EditField = (id, field, value) => async (dispatch) => {
+export const EditField = (field, value) => async (dispatch) => {
   dispatch(setLoading(true));
   try {
     const user = await axios.get(`http://localhost:3001/users/${id}`);
@@ -59,6 +59,5 @@ export const EditField = (id, field, value) => async (dispatch) => {
     dispatch(setLoading());
   }
 };
-
 export const userReducer = userSlice.reducer;
 export default userSlice.reducer;

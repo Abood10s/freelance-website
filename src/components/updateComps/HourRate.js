@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
+import { Buttons } from "../../Modals/EditModal";
 import { EditField } from "../../redux/UserSlice";
+import PrimaryBtn from "../buttons/PrimaryBtn";
 
 const Cont = styled.div`
   display: flex;
@@ -39,9 +41,12 @@ const HourRate = ({ title, desc, disabled, value, update }) => {
         /hr
       </Inputs>
       {update && (
-        <button onClick={() => dispatch(EditField(1, "hourlyRate", hourly))}>
-          update
-        </button>
+        <Buttons>
+          <PrimaryBtn
+            title="Save"
+            func={() => dispatch(EditField("hourlyRate", hourly))}
+          />
+        </Buttons>
       )}
     </Cont>
   );

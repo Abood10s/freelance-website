@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import styled from "styled-components";
+import { Buttons } from "../../Modals/EditModal";
 import { EditField } from "../../redux/UserSlice";
+import PrimaryBtn from "../buttons/PrimaryBtn";
 import { Cont, Edit } from "./UpdateTitle";
 const TextArea = styled.textarea`
   border: 2px solid ${(props) => props.theme.Global.borderColor};
@@ -34,9 +36,13 @@ const UpdateOverview = ({ view }) => {
           value={overview}
           onChange={(e) => setOverview(e.target.value)}
         ></TextArea>
-        <button onClick={() => dispatch(EditField(1, "overview", overview))}>
-          update
-        </button>
+
+        <Buttons>
+          <PrimaryBtn
+            title="Save"
+            func={() => dispatch(EditField("overview", overview))}
+          />
+        </Buttons>
       </Edit>
     </Cont>
   );

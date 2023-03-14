@@ -2,7 +2,7 @@ import React from "react";
 import CustomizedMenus from "../Menu/Menu";
 import { Avatar } from "../profileContainer/style";
 import NavSearch from "./NavSearch";
-import { Nav, NavFlex1, NavFlex2 } from "./style";
+import { Logout, Nav, NavFlex1, NavFlex2 } from "./style";
 import topwork from "../../assets/topwork.png";
 import { Link } from "react-router-dom";
 import { setAuth } from "../../redux/AuthSlice";
@@ -118,14 +118,14 @@ const Navbar = () => {
           ></path>
         </svg>
         <Avatar size="32px" />
-        <button
+        <Logout
           onClick={() => {
             dispatch(setAuth(false));
             localStorage.clear();
           }}
         >
           Logout
-        </button>
+        </Logout>
       </NavFlex2>
     </Nav>
   );

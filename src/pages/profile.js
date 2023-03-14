@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getUserInfo } from "../redux/UserSlice";
 
 import {
   Actions,
@@ -33,6 +32,7 @@ import ProfileItem from "../components/ProfileItem/ProfileItem";
 import Profileicon from "../components/ProfileItem/Profileicon";
 import AddSvg from "../SVGs/AddSvg";
 import SubmitBtn from "../components/SubmitBtn";
+import { getUserInfo } from "../redux/UserSlice";
 
 const Profile = () => {
   const { theUser, isLoading } = useSelector((state) => state.user);

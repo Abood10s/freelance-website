@@ -15,3 +15,16 @@ export const NavFlex2 = styled.div`
   align-items: center;
   gap: 1em;
 `;
+export const Logout = styled.button`
+  color: #fff;
+  background-color: ${(props) => props.theme.Global.txtGreen};
+  display: block;
+  padding: 0.5em 1.5em;
+  border-radius: 50px;
+  white-space: nowrap;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 0.2rem auto;
+`;

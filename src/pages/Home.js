@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import styled from "styled-components";
 import { Wrapper } from "../global/style";
@@ -7,6 +7,7 @@ import MainSearch from "../components/MainSearch";
 import SideProfile from "../components/sideprofile";
 import SideSection from "../components/sideSection";
 import { PATHS } from "../Routes";
+import axios from "axios";
 
 const Feed = styled.div`
   border: 1px solid #e4ebe4;
@@ -32,11 +33,31 @@ const StyledLink = styled(NavLink)`
   padding: 0.5rem 0;
 `;
 const Home = () => {
+  const [name, setName] = useState("");
+  const [jobTitle, setJobTitle] = useState("");
+
+  const id = localStorage.getItem("id");
+  const fetchData = useCallback(async () => {
+    try {
+      const response = await axios.get(`http://localhost:3001/users/${id}`);
+      if (response) {
+        setName(response.data.name);
+        setJobTitle(response.data.jobTitle);
+      }
+    } catch (error) {
+      console.log(error);
+    } finally {
+    }
+  }, [id, setName, setJobTitle]);
+
+  useEffect(() => {
+    fetchData();
+  }, [name, jobTitle]);
   return (
     <>
       <Wrapper>
         <div>
-          <Greeting />
+          <Greeting name={name} />
           <MainSearch />
 
           <Feed>
@@ -69,7 +90,7 @@ const Home = () => {
         </div>
         <div>
           <Profile>
-            <SideProfile />
+            <SideProfile name={name} jobTitle={jobTitle} />
           </Profile>
           <SideSection
             title="Proposals"
@@ -77,36 +98,6 @@ const Home = () => {
             body="Looking for work? Browse jobs and get started on a proposal."
           />
         </div>
-        {/* <div style={{ width: "100%" }}>
-            <form onSubmit={handleSubmit}>
-              <label htmlFor="name">Name:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleInputChange}
-              />
-              <label htmlFor="email">Email:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-              />
-              <label htmlFor="password">Password:</label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                value={formData.password}
-                onChange={handleInputChange}
-              />
-  
-              <button type="submit">Submit</button>
-            </form>
-          </div> */}
       </Wrapper>
     </>
   );

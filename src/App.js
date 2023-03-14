@@ -18,7 +18,6 @@ function App() {
   const dispatch = useDispatch();
   const { authenticated } = useSelector((state) => state.auth);
   const router = useRoutes(routes);
-
   const id = localStorage.getItem("id");
   useEffect(() => {
     if (id) {

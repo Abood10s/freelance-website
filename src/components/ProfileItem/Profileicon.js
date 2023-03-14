@@ -21,7 +21,7 @@ const Profileicon = ({ children, component, modal }) => {
   return (
     <>
       {modal ? null : (
-        <EditModal open={isOpen} onClose={() => setIsOpen(false)}>
+        <EditModal open={isOpen} onClose={() => setIsOpen(false)} func>
           {component}
         </EditModal>
       )}

@@ -3,9 +3,7 @@ import { useSelector } from "react-redux";
 import { getDate } from "../GlobalFunctions";
 import { Container, DayAndDate, Personal } from "./style";
 
-const Greeting = () => {
-  const { theUser } = useSelector((state) => state.user);
-  const { name } = theUser;
+const Greeting = ({ name }) => {
   return (
     <Container>
       <Personal>
@@ -15,10 +13,10 @@ const Greeting = () => {
             month: "long",
           })},${new Date().toLocaleString("en-US", {
             day: "2-digit",
-          })}th `}</h3>
+          })} `}</h3>
         </DayAndDate>
 
-        <h2>Good Morning, {name}</h2>
+        <h2>Welcome back, {name}</h2>
       </Personal>
       <svg
         data-name="Layer 1"

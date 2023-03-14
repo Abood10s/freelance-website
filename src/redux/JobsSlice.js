@@ -3,6 +3,7 @@ import axios from "axios";
 
 const initialState = {
   jobsData: [],
+  totalCount: 0,
   recentJobs: [],
   savedJobs: [],
   searchedJobs: [],
@@ -50,6 +51,9 @@ export const jobsSlice = createSlice({
     setError: (state, action) => {
       state.error = action.payload;
     },
+    setTotalCount: (state, action) => {
+      state.totalCount = action.payload;
+    },
   },
 });
 export const {
@@ -58,6 +62,7 @@ export const {
   getSearchedJobs,
   getRecentJobs,
   setLoading,
+  setTotalCount,
   setError,
 } = jobsSlice.actions;
 export const getAllJobs = (page) => async (dispatch) => {
@@ -68,6 +73,7 @@ export const getAllJobs = (page) => async (dispatch) => {
     );
     if (response) {
       dispatch(getJobs(response.data));
+      dispatch(setTotalCount(response.headers["x-total-count"]));
     }
   } catch (error) {
     dispatch(setError(error.message));

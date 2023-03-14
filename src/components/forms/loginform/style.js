@@ -19,7 +19,7 @@ export const GoogleIcon = styled.div`
   top: 0.1rem;
 `;
 export const FormContainer = styled.form`
-  width: 80%;
+  width: ${(props) => props.width || "80%"};
   margin: auto;
   display: flex;
   flex-direction: column;

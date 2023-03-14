@@ -5,7 +5,7 @@ import HourRate from "./HourRate";
 import { Cont, Edit } from "./UpdateTitle";
 
 const UpdateHourlyRate = () => {
-  const { theUser, isLoading } = useSelector((state) => state.user);
+  const { theUser } = useSelector((state) => state.user);
   const { hourlyRate } = theUser;
   const { percentage, total } = CalculateHourlyRate(hourlyRate);
 
