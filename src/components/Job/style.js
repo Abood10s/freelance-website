@@ -52,3 +52,14 @@ export const Proposals = styled.div`
   align-items: center;
   gap: 0.2rem;
 `;
+export const Like = styled.div`
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background-color: ${({ isLiked }) => (isLiked ? "#83c883" : null)};
+  padding: 0.3rem;
+  &:hover {
+    background-color: #83c883;
+  }
+`;

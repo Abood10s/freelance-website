@@ -11,7 +11,7 @@ const NoSavedSvg = () => {
         role="img"
         style={{ height: "180px" }}
       >
-        <g clip-path="url(#clip0_12360_63878)">
+        <g clipPath="url(#clip0_12360_63878)">
           <path
             d="M72.332 61.848c-2.7-6.403-10.704-8.604-16.407-4.602-5.502 3.901-7.603 11.005-5.202 17.307l6.603 17.608c.7 1.901 2.9 2.702 4.702 1.901l17.007-8.003c6.103-2.902 9.505-9.505 8.304-16.108-1.3-6.903-8.604-10.904-15.007-8.103z"
             fill="url(#paint0_radial_12360_63878-uid-36)"
@@ -154,9 +154,9 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(17.78661 14.48993 -20.03996 24.59937 61.701 72.808)"
           >
-            <stop offset=".677" stop-color="#E771AC"></stop>
-            <stop offset=".801" stop-color="#D2649F"></stop>
-            <stop offset="1" stop-color="#A94985"></stop>
+            <stop offset=".677" stopColor="#E771AC"></stop>
+            <stop offset=".801" stopColor="#D2649F"></stop>
+            <stop offset="1" stopColor="#A94985"></stop>
           </radialGradient>
           <radialGradient
             id="paint1_radial_12360_63878-uid-36"
@@ -166,8 +166,8 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(15.75572 2.59322 -5.23293 31.79394 57.664 75.237)"
           >
-            <stop offset=".677" stop-color="#A94884" stop-opacity="0"></stop>
-            <stop offset="1" stop-color="#A94884"></stop>
+            <stop offset=".677" stopColor="#A94884" stopOpacity="0"></stop>
+            <stop offset="1" stopColor="#A94884"></stop>
           </radialGradient>
           <radialGradient
             id="paint6_radial_12360_63878-uid-36"
@@ -177,9 +177,9 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(30.998 43.088) scale(7.91354)"
           >
-            <stop offset=".677" stop-color="#F8B0B2"></stop>
-            <stop offset=".797" stop-color="#E69B9F"></stop>
-            <stop offset="1" stop-color="#C17078"></stop>
+            <stop offset=".677" stopColor="#F8B0B2"></stop>
+            <stop offset=".797" stopColor="#E69B9F"></stop>
+            <stop offset="1" stopColor="#C17078"></stop>
           </radialGradient>
           <radialGradient
             id="paint7_radial_12360_63878-uid-36"
@@ -189,9 +189,9 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(31.606 52.418) scale(20.0546)"
           >
-            <stop offset=".677" stop-color="#355CAA"></stop>
-            <stop offset=".806" stop-color="#2D5095"></stop>
-            <stop offset="1" stop-color="#1E3B6F"></stop>
+            <stop offset=".677" stopColor="#355CAA"></stop>
+            <stop offset=".806" stopColor="#2D5095"></stop>
+            <stop offset="1" stopColor="#1E3B6F"></stop>
           </radialGradient>
           <radialGradient
             id="paint8_radial_12360_63878-uid-36"
@@ -201,13 +201,13 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(19.30739 -34.92771 56.2545 31.09644 84.436 54.115)"
           >
-            <stop offset=".385" stop-color="#BC5327"></stop>
-            <stop offset=".593" stop-color="#BA5226"></stop>
-            <stop offset=".694" stop-color="#B24E25"></stop>
-            <stop offset=".771" stop-color="#A54822"></stop>
-            <stop offset=".837" stop-color="#933F1D"></stop>
-            <stop offset=".895" stop-color="#7B3417"></stop>
-            <stop offset=".922" stop-color="#6D2D14"></stop>
+            <stop offset=".385" stopColor="#BC5327"></stop>
+            <stop offset=".593" stopColor="#BA5226"></stop>
+            <stop offset=".694" stopColor="#B24E25"></stop>
+            <stop offset=".771" stopColor="#A54822"></stop>
+            <stop offset=".837" stopColor="#933F1D"></stop>
+            <stop offset=".895" stopColor="#7B3417"></stop>
+            <stop offset=".922" stopColor="#6D2D14"></stop>
           </radialGradient>
           <radialGradient
             id="paint9_radial_12360_63878-uid-36"
@@ -217,8 +217,8 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(.07817 -21.28796 47.73818 .1753 116.454 60.427)"
           >
-            <stop offset=".385" stop-color="#6D2D14" stop-opacity="0"></stop>
-            <stop offset=".922" stop-color="#6D2D14"></stop>
+            <stop offset=".385" stopColor="#6D2D14" stopOpacity="0"></stop>
+            <stop offset=".922" stopColor="#6D2D14"></stop>
           </radialGradient>
           <radialGradient
             id="paint10_radial_12360_63878-uid-36"
@@ -228,8 +228,8 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(13.14253 -14.57512 23.37856 21.08069 88.483 56.34)"
           >
-            <stop offset=".385" stop-color="#6D2D14"></stop>
-            <stop offset=".922" stop-color="#6D2D14" stop-opacity="0"></stop>
+            <stop offset=".385" stopColor="#6D2D14"></stop>
+            <stop offset=".922" stopColor="#6D2D14" stopOpacity="0"></stop>
           </radialGradient>
           <radialGradient
             id="paint11_radial_12360_63878-uid-36"
@@ -239,8 +239,8 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="rotate(-74.806 83.95 -43.538) scale(22.9768 63.3992)"
           >
-            <stop offset=".385" stop-color="#6D2D14" stop-opacity="0"></stop>
-            <stop offset=".922" stop-color="#6D2D14"></stop>
+            <stop offset=".385" stopColor="#6D2D14" stopOpacity="0"></stop>
+            <stop offset=".922" stopColor="#6D2D14"></stop>
           </radialGradient>
           <radialGradient
             id="paint12_radial_12360_63878-uid-36"
@@ -250,8 +250,8 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(3.6284 -25.9654 64.12394 8.96068 102.091 37.73)"
           >
-            <stop offset=".385" stop-color="#6D2D14" stop-opacity="0"></stop>
-            <stop offset=".922" stop-color="#6D2D14"></stop>
+            <stop offset=".385" stopColor="#6D2D14" stopOpacity="0"></stop>
+            <stop offset=".922" stopColor="#6D2D14"></stop>
           </radialGradient>
           <radialGradient
             id="paint13_radial_12360_63878-uid-36"
@@ -261,8 +261,8 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(10.18438 -3.29453 7.38783 22.83799 85.106 66.953)"
           >
-            <stop offset=".385" stop-color="#6D2D14"></stop>
-            <stop offset=".922" stop-color="#6D2D14" stop-opacity="0"></stop>
+            <stop offset=".385" stopColor="#6D2D14"></stop>
+            <stop offset=".922" stopColor="#6D2D14" stopOpacity="0"></stop>
           </radialGradient>
           <radialGradient
             id="paint14_radial_12360_63878-uid-36"
@@ -272,8 +272,8 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(6.60292 -7.32267 8.86501 7.99367 89.407 85.67)"
           >
-            <stop offset=".426" stop-color="#E4EAE4" stop-opacity=".5"></stop>
-            <stop offset="1" stop-color="#D5E0D5" stop-opacity="0"></stop>
+            <stop offset=".426" stopColor="#E4EAE4" stopOpacity=".5"></stop>
+            <stop offset="1" stopColor="#D5E0D5" stopOpacity="0"></stop>
           </radialGradient>
           <radialGradient
             id="paint15_radial_12360_63878-uid-36"
@@ -283,10 +283,10 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(6.60292 -7.32267 8.86501 7.99367 91.34 87.147)"
           >
-            <stop offset=".426" stop-color="#D5E0D5" stop-opacity="0"></stop>
-            <stop offset=".749" stop-color="#D8E2D8" stop-opacity=".563"></stop>
-            <stop offset=".944" stop-color="#E0E7E0" stop-opacity=".903"></stop>
-            <stop offset="1" stop-color="#E4EAE4"></stop>
+            <stop offset=".426" stopColor="#D5E0D5" stopOpacity="0"></stop>
+            <stop offset=".749" stopColor="#D8E2D8" stopOpacity=".563"></stop>
+            <stop offset=".944" stopColor="#E0E7E0" stopOpacity=".903"></stop>
+            <stop offset="1" stopColor="#E4EAE4"></stop>
           </radialGradient>
           <radialGradient
             id="paint16_radial_12360_63878-uid-36"
@@ -296,10 +296,10 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(6.60288 -7.3227 8.86505 7.99362 96.95 91.873)"
           >
-            <stop offset=".426" stop-color="#E4EAE4"></stop>
-            <stop offset=".749" stop-color="#E1E8E1" stop-opacity=".438"></stop>
-            <stop offset=".944" stop-color="#D9E3D9" stop-opacity=".097"></stop>
-            <stop offset="1" stop-color="#D5E0D5" stop-opacity="0"></stop>
+            <stop offset=".426" stopColor="#E4EAE4"></stop>
+            <stop offset=".749" stopColor="#E1E8E1" stopOpacity=".438"></stop>
+            <stop offset=".944" stopColor="#D9E3D9" stopOpacity=".097"></stop>
+            <stop offset="1" stopColor="#D5E0D5" stopOpacity="0"></stop>
           </radialGradient>
           <radialGradient
             id="paint17_radial_12360_63878-uid-36"
@@ -309,10 +309,10 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(5.85218 -6.49009 7.85714 7.08487 92.95 85.901)"
           >
-            <stop offset=".426" stop-color="#E4EAE4" stop-opacity=".5"></stop>
-            <stop offset=".749" stop-color="#E1E8E1" stop-opacity=".219"></stop>
-            <stop offset=".944" stop-color="#D9E3D9" stop-opacity=".049"></stop>
-            <stop offset="1" stop-color="#D5E0D5" stop-opacity="0"></stop>
+            <stop offset=".426" stopColor="#E4EAE4" stopOpacity=".5"></stop>
+            <stop offset=".749" stopColor="#E1E8E1" stopOpacity=".219"></stop>
+            <stop offset=".944" stopColor="#D9E3D9" stopOpacity=".049"></stop>
+            <stop offset="1" stopColor="#D5E0D5" stopOpacity="0"></stop>
           </radialGradient>
           <radialGradient
             id="paint18_radial_12360_63878-uid-36"
@@ -322,8 +322,8 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(.90811 -4.69501 11.81158 2.2846 86.873 22.033)"
           >
-            <stop offset=".426" stop-color="#E4EAE4" stop-opacity=".5"></stop>
-            <stop offset="1" stop-color="#D5E0D5" stop-opacity="0"></stop>
+            <stop offset=".426" stopColor="#E4EAE4" stopOpacity=".5"></stop>
+            <stop offset="1" stopColor="#D5E0D5" stopOpacity="0"></stop>
           </radialGradient>
           <radialGradient
             id="paint19_radial_12360_63878-uid-36"
@@ -333,8 +333,8 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(1.06616 -4.52154 10.2574 2.41866 88.804 16.633)"
           >
-            <stop offset=".426" stop-color="#E4EAE4" stop-opacity=".5"></stop>
-            <stop offset="1" stop-color="#D5E0D5" stop-opacity="0"></stop>
+            <stop offset=".426" stopColor="#E4EAE4" stopOpacity=".5"></stop>
+            <stop offset="1" stopColor="#D5E0D5" stopOpacity="0"></stop>
           </radialGradient>
           <radialGradient
             id="paint20_radial_12360_63878-uid-36"
@@ -344,10 +344,10 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(.90811 -4.69501 11.81158 2.2846 88.445 22.01)"
           >
-            <stop offset=".426" stop-color="#D5E0D5" stop-opacity="0"></stop>
-            <stop offset=".749" stop-color="#D8E2D8" stop-opacity=".563"></stop>
-            <stop offset=".944" stop-color="#E0E7E0" stop-opacity=".903"></stop>
-            <stop offset="1" stop-color="#E4EAE4"></stop>
+            <stop offset=".426" stopColor="#D5E0D5" stopOpacity="0"></stop>
+            <stop offset=".749" stopColor="#D8E2D8" stopOpacity=".563"></stop>
+            <stop offset=".944" stopColor="#E0E7E0" stopOpacity=".903"></stop>
+            <stop offset="1" stopColor="#E4EAE4"></stop>
           </radialGradient>
           <radialGradient
             id="paint21_radial_12360_63878-uid-36"
@@ -357,10 +357,10 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(1.06616 -4.52154 10.2574 2.41866 89.058 16.478)"
           >
-            <stop offset=".426" stop-color="#D5E0D5" stop-opacity="0"></stop>
-            <stop offset=".749" stop-color="#D8E2D8" stop-opacity=".563"></stop>
-            <stop offset=".944" stop-color="#E0E7E0" stop-opacity=".903"></stop>
-            <stop offset="1" stop-color="#E4EAE4"></stop>
+            <stop offset=".426" stopColor="#D5E0D5" stopOpacity="0"></stop>
+            <stop offset=".749" stopColor="#D8E2D8" stopOpacity=".563"></stop>
+            <stop offset=".944" stopColor="#E0E7E0" stopOpacity=".903"></stop>
+            <stop offset="1" stopColor="#E4EAE4"></stop>
           </radialGradient>
           <radialGradient
             id="paint22_radial_12360_63878-uid-36"
@@ -370,10 +370,10 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(.90811 -4.69501 11.81158 2.2846 98.502 22.529)"
           >
-            <stop offset=".426" stop-color="#E4EAE4"></stop>
-            <stop offset=".749" stop-color="#E1E8E1" stop-opacity=".438"></stop>
-            <stop offset=".944" stop-color="#D9E3D9" stop-opacity=".097"></stop>
-            <stop offset="1" stop-color="#D5E0D5" stop-opacity="0"></stop>
+            <stop offset=".426" stopColor="#E4EAE4"></stop>
+            <stop offset=".749" stopColor="#E1E8E1" stopOpacity=".438"></stop>
+            <stop offset=".944" stopColor="#D9E3D9" stopOpacity=".097"></stop>
+            <stop offset="1" stopColor="#D5E0D5" stopOpacity="0"></stop>
           </radialGradient>
           <radialGradient
             id="paint23_radial_12360_63878-uid-36"
@@ -383,10 +383,10 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(.90811 -4.69501 11.81158 2.2846 92.094 22.875)"
           >
-            <stop offset=".426" stop-color="#E4EAE4" stop-opacity=".5"></stop>
-            <stop offset=".749" stop-color="#E1E8E1" stop-opacity=".219"></stop>
-            <stop offset=".944" stop-color="#D9E3D9" stop-opacity=".049"></stop>
-            <stop offset="1" stop-color="#D5E0D5" stop-opacity="0"></stop>
+            <stop offset=".426" stopColor="#E4EAE4" stopOpacity=".5"></stop>
+            <stop offset=".749" stopColor="#E1E8E1" stopOpacity=".219"></stop>
+            <stop offset=".944" stopColor="#D9E3D9" stopOpacity=".049"></stop>
+            <stop offset="1" stopColor="#D5E0D5" stopOpacity="0"></stop>
           </radialGradient>
           <radialGradient
             id="paint24_radial_12360_63878-uid-36"
@@ -396,10 +396,10 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(1.06616 -4.52154 10.2574 2.41866 98.233 18.244)"
           >
-            <stop offset=".426" stop-color="#E4EAE4"></stop>
-            <stop offset=".749" stop-color="#E1E8E1" stop-opacity=".438"></stop>
-            <stop offset=".944" stop-color="#D9E3D9" stop-opacity=".097"></stop>
-            <stop offset="1" stop-color="#D5E0D5" stop-opacity="0"></stop>
+            <stop offset=".426" stopColor="#E4EAE4"></stop>
+            <stop offset=".749" stopColor="#E1E8E1" stopOpacity=".438"></stop>
+            <stop offset=".944" stopColor="#D9E3D9" stopOpacity=".097"></stop>
+            <stop offset="1" stopColor="#D5E0D5" stopOpacity="0"></stop>
           </radialGradient>
           <radialGradient
             id="paint25_radial_12360_63878-uid-36"
@@ -409,10 +409,10 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(1.06616 -4.52154 10.2574 2.41866 90.897 17.425)"
           >
-            <stop offset=".426" stop-color="#E4EAE4" stop-opacity=".5"></stop>
-            <stop offset=".749" stop-color="#E1E8E1" stop-opacity=".219"></stop>
-            <stop offset=".944" stop-color="#D9E3D9" stop-opacity=".049"></stop>
-            <stop offset="1" stop-color="#D5E0D5" stop-opacity="0"></stop>
+            <stop offset=".426" stopColor="#E4EAE4" stopOpacity=".5"></stop>
+            <stop offset=".749" stopColor="#E1E8E1" stopOpacity=".219"></stop>
+            <stop offset=".944" stopColor="#D9E3D9" stopOpacity=".049"></stop>
+            <stop offset="1" stopColor="#D5E0D5" stopOpacity="0"></stop>
           </radialGradient>
           <radialGradient
             id="paint26_radial_12360_63878-uid-36"
@@ -422,9 +422,9 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(17.78661 14.48993 -20.03996 24.59937 61.701 72.808)"
           >
-            <stop offset=".677" stop-color="#E771AC"></stop>
-            <stop offset=".801" stop-color="#D2649F"></stop>
-            <stop offset="1" stop-color="#A94985"></stop>
+            <stop offset=".677" stopColor="#E771AC"></stop>
+            <stop offset=".801" stopColor="#D2649F"></stop>
+            <stop offset="1" stopColor="#A94985"></stop>
           </radialGradient>
           <radialGradient
             id="paint27_radial_12360_63878-uid-36"
@@ -434,8 +434,8 @@ const NoSavedSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(15.75572 2.59322 -5.23293 31.79394 57.664 75.237)"
           >
-            <stop offset=".677" stop-color="#A94884" stop-opacity="0"></stop>
-            <stop offset="1" stop-color="#A94884"></stop>
+            <stop offset=".677" stopColor="#A94884" stopOpacity="0"></stop>
+            <stop offset="1" stopColor="#A94884"></stop>
           </radialGradient>
           <linearGradient
             id="paint2_linear_12360_63878-uid-36"
@@ -445,11 +445,11 @@ const NoSavedSvg = () => {
             y2="113.751"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#C4D2C3" stop-opacity="0"></stop>
-            <stop offset=".073" stop-color="#C4D2C3"></stop>
-            <stop offset=".191" stop-color="#C4D2C3"></stop>
-            <stop offset=".887" stop-color="#C4D2C3"></stop>
-            <stop offset="1" stop-color="#C4D2C3" stop-opacity=".014"></stop>
+            <stop stopColor="#C4D2C3" stopOpacity="0"></stop>
+            <stop offset=".073" stopColor="#C4D2C3"></stop>
+            <stop offset=".191" stopColor="#C4D2C3"></stop>
+            <stop offset=".887" stopColor="#C4D2C3"></stop>
+            <stop offset="1" stopColor="#C4D2C3" stopOpacity=".014"></stop>
           </linearGradient>
           <linearGradient
             id="paint3_linear_12360_63878-uid-36"
@@ -459,10 +459,10 @@ const NoSavedSvg = () => {
             y2="26.43"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#E4EAE4"></stop>
-            <stop offset=".614" stop-color="#E2E9E2"></stop>
-            <stop offset=".892" stop-color="#DBE4DB"></stop>
-            <stop offset="1" stop-color="#D5E0D5"></stop>
+            <stop stopColor="#E4EAE4"></stop>
+            <stop offset=".614" stopColor="#E2E9E2"></stop>
+            <stop offset=".892" stopColor="#DBE4DB"></stop>
+            <stop offset="1" stopColor="#D5E0D5"></stop>
           </linearGradient>
           <linearGradient
             id="paint4_linear_12360_63878-uid-36"
@@ -472,10 +472,10 @@ const NoSavedSvg = () => {
             y2="51.347"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".52" stop-color="#F8B0B2"></stop>
-            <stop offset=".642" stop-color="#EEA5A8"></stop>
-            <stop offset=".856" stop-color="#D5878D"></stop>
-            <stop offset="1" stop-color="#C17078"></stop>
+            <stop offset=".52" stopColor="#F8B0B2"></stop>
+            <stop offset=".642" stopColor="#EEA5A8"></stop>
+            <stop offset=".856" stopColor="#D5878D"></stop>
+            <stop offset="1" stopColor="#C17078"></stop>
           </linearGradient>
           <linearGradient
             id="paint5_linear_12360_63878-uid-36"
@@ -485,8 +485,8 @@ const NoSavedSvg = () => {
             y2="50.986"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#A06069" stop-opacity="0"></stop>
-            <stop offset="1" stop-color="#A06069"></stop>
+            <stop stopColor="#A06069" stopOpacity="0"></stop>
+            <stop offset="1" stopColor="#A06069"></stop>
           </linearGradient>
           <clipPath id="clip0_12360_63878-uid-36">
             <rect width="145" height="130" fill="#fff"></rect>

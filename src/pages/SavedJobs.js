@@ -4,13 +4,14 @@ import Job from "../components/Job";
 import NoSavedSvg from "../SVGs/NoSavedSvg";
 
 const SavedJobs = () => {
-  const { savedJobs } = useSelector((state) => state.jobs);
+  const saved = useSelector((state) => state.jobs.savedJobs);
+
   return (
     <div>
-      {savedJobs?.map((item) => {
+      {saved?.map((item) => {
         return <Job key={item.id} {...item} />;
       })}
-      {savedJobs.length === 0 && <NoSavedSvg />}
+      {saved.length === 0 && <NoSavedSvg />}
     </div>
   );
 };

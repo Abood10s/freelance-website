@@ -21,7 +21,8 @@ const Overlay = styled.div`
   z-index: 1000;
 `;
 const JobModal = ({ open, onClose, children, thejob }) => {
-  const { topic, payInfo, body, skills, proposals, payment, location } = thejob;
+  const { topic, payInfo, body, skills, proposals, payment, location } =
+    thejob || {};
   return ReactDOM.createPortal(
     open ? (
       <>
@@ -30,7 +31,7 @@ const JobModal = ({ open, onClose, children, thejob }) => {
           <div>
             <i className="fa-solid fa-chevron-left" onClick={onClose}></i>
           </div>
-          {topic}
+          {topic ? topic : "saved job"}
           <button onClick={onClose}>Cancel</button>
           <button>Save</button>
         </Modal>

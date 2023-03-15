@@ -42,7 +42,10 @@ export const jobsSlice = createSlice({
       ];
     },
     saveJob: (state, action) => {
-      state.savedJobs = [...state.savedJobs, action.payload];
+      const jobId = action.payload.id;
+      if (!state.savedJobs.some((job) => job.id === jobId)) {
+        state.savedJobs.push(action.payload);
+      }
     },
     setLoading: (state, action) => {
       const { payload = false } = action;

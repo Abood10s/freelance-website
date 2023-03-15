@@ -8,6 +8,7 @@ import SideProfile from "../components/sideprofile";
 import SideSection from "../components/sideSection";
 import { PATHS } from "../Routes";
 import axios from "axios";
+import { useSelector } from "react-redux";
 
 const Feed = styled.div`
   border: 1px solid #e4ebe4;
@@ -33,6 +34,8 @@ const StyledLink = styled(NavLink)`
   padding: 0.5rem 0;
 `;
 const Home = () => {
+  const saved = useSelector((state) => state.jobs.savedJobs);
+
   const [name, setName] = useState("");
   const [jobTitle, setJobTitle] = useState("");
 
@@ -82,7 +85,7 @@ const Home = () => {
                 end
                 activeClassName="active"
               >
-                Saved Jobs
+                Saved Jobs ({saved.length})
               </StyledLink>
             </Tabs>
             <Outlet />

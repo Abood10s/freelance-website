@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import JobModal from "../../Modals/JobModal";
+import { saveJob } from "../../redux/JobsSlice";
 import DislikeSvg from "../../SVGs/DislikeSvg";
 import LikeSvg from "../../SVGs/LikeSvg";
 import LocationSvg from "../../SVGs/LocationSvg";
@@ -14,6 +15,7 @@ import {
   Flex2,
   Icons,
   JobContainer,
+  Like,
   PayAndLocation,
   PayInfo,
   Proposals,
@@ -31,8 +33,8 @@ const Job = ({
   payment,
   location,
 }) => {
-  const { saveJob } = useSelector((state) => state.jobs);
   const dispatch = useDispatch();
+  const saved = useSelector((state) => state.jobs.savedJobs);
 
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -49,13 +51,11 @@ const Job = ({
             <Profileicon modal="no">
               <DislikeSvg />
             </Profileicon>
-
-            <Profileicon modal="no">
-              <LikeSvg onClick={() => dispatch(saveJob(theJob))} />
-            </Profileicon>
+            <Like onClick={() => dispatch(saveJob(theJob))}>
+              <LikeSvg />
+            </Like>
           </Icons>
         </Flex1>
-
         <Flex2>
           <PayInfo>{payInfo}</PayInfo>
           <Body>{body}</Body>
