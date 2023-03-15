@@ -9,6 +9,7 @@ import { router as routes } from "./Routes";
 import { Spinner } from "./global/style";
 
 const Navbar = lazy(() => import("./components/Navbar"));
+const Footer = lazy(() => import("./components/Footer"));
 
 const theme = {
   Global: COLORS,
@@ -33,6 +34,11 @@ function App() {
           </Suspense>
         )}
         <Suspense fallback={<Spinner />}>{router}</Suspense>
+        {authenticated && (
+          <Suspense fallback={<Spinner />}>
+            <Footer />
+          </Suspense>
+        )}
       </ThemeProvider>
     </div>
   );

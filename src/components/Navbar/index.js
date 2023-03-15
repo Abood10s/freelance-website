@@ -120,6 +120,7 @@ const Navbar = () => {
         <Avatar size="32px" />
         <Logout
           onClick={() => {
+            window.location.reload();
             dispatch(setAuth(false));
             localStorage.clear();
           }}

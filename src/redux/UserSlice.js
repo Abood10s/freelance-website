@@ -1,7 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-
-const id = localStorage.getItem("id");
 const initialState = {
   theUser: {},
   isLoading: false,
@@ -26,6 +24,8 @@ export const userSlice = createSlice({
 export const { setUser, setLoading, setError } = userSlice.actions;
 
 export const getUserInfo = () => async (dispatch) => {
+  const id = localStorage.getItem("id");
+
   dispatch(setLoading(true));
   try {
     const response = await axios.get(`http://localhost:3001/users/${id}`);
@@ -39,6 +39,7 @@ export const getUserInfo = () => async (dispatch) => {
   }
 };
 export const EditField = (field, value) => async (dispatch) => {
+  const id = localStorage.getItem("id");
   dispatch(setLoading(true));
   try {
     const user = await axios.get(`http://localhost:3001/users/${id}`);
