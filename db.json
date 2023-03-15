@@ -32,9 +32,9 @@
       "name": "Yousef Sheikh",
       "email": "yousefhusam@gmail.com",
       "password": "yousefsh",
-      "jobTitle": "CEO",
-      "overview": "",
-      "hourlyRate": 35
+      "jobTitle": "ceo",
+      "overview": "learning front end development",
+      "hourlyRate": "45"
     },
     {
       "id": 5,

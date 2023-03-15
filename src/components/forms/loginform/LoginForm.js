@@ -45,7 +45,6 @@ const LoginForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     console.log(isLoading);
-    // console.log(process.env.REACT_APP_API_BASE_URL);
     await Schema.validate(values, { abortEarly: false })
       .then(() => {
         dispatch(handleAuth(values.email, values.password));

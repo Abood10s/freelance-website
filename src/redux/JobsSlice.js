@@ -111,11 +111,11 @@ export const getAllSearchedJobs = (query) => async (dispatch) => {
     dispatch(setLoading());
   }
 };
-export const filterJobs = (filter, query) => async (dispatch) => {
+export const filterJobs = (filter, query, searched) => async (dispatch) => {
   dispatch(setLoading(true));
   try {
     const response = await axios.get(
-      `http://localhost:3001/jobs?${filter}_like=${query}`
+      `http://localhost:3001/jobs?topic_like=${searched}&${filter}_like=${query}`
     );
     if (response) {
       dispatch(getSearchedJobs(response.data));

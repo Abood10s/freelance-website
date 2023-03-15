@@ -36,9 +36,6 @@ export const handleAuth = (email, password) => async (dispatch) => {
       localStorage.setItem("id", `${res.data[0].id}`);
       localStorage.setItem("authenticated", true);
       dispatch(setUser(...res.data[0]));
-      console.log(...res.data[0]);
-    } else {
-      dispatch(setAuth(false));
     }
   } catch (error) {
     dispatch(setLoading());

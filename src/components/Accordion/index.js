@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { filterJobs } from "../../redux/JobsSlice";
 import { Content, Header, InputWrap, Wrap } from "./style";
 
-const Accordion = ({ title, data, filter }) => {
+const Accordion = ({ title, data, filter, searched }) => {
   const [show, setShow] = useState(true);
 
   const dispatch = useDispatch();
@@ -27,7 +27,7 @@ const Accordion = ({ title, data, filter }) => {
                   type="checkbox"
                   id={item}
                   value={item}
-                  onChange={() => dispatch(filterJobs(filter, item))}
+                  onChange={() => dispatch(filterJobs(filter, item, searched))}
                 />
                 <label htmlFor={item}>{item}</label>
               </InputWrap>
