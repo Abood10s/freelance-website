@@ -53,6 +53,7 @@ export const EditField = (field, value) => async (dispatch) => {
     );
     if (response) {
       dispatch(setUser(response.data));
+      window.location.reload();
     }
   } catch (error) {
     dispatch(setError(error.message));

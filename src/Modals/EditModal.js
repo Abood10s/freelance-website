@@ -40,7 +40,6 @@ const EditModal = ({ open, onClose, children }) => {
           <Content>{children || <h3>New Feature Coming soon..</h3>}</Content>
           <Buttons>
             <p onClick={onClose}>Cancel</p>
-            <PrimaryBtn title="Save" func />
           </Buttons>
         </Modal>
       </>
