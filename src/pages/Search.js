@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import Job from "../components/Job";
-import { getAllSearchedJobs } from "../redux/JobsSlice";
+import { getAllSearchedJobs, sendSearchHistory } from "../redux/JobsSlice";
 import Noresults from "../assets/searcherror.png";
 import { Spinner, Wrapper } from "../global/style";
 import Accordion from "../components/Accordion";
@@ -38,6 +38,7 @@ const Search = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getAllSearchedJobs(query));
+    dispatch(sendSearchHistory(query));
   }, [query]);
   return (
     <Wrapper reverse={true} border={true}>
@@ -68,7 +69,9 @@ const Search = () => {
         <SaveSearch>
           <MainSearch />
           <SubmitBtn text="Save search" />
-          <h4 style={{ color: "green" }}>{searchedJobs.length} jobs found</h4>
+          <h4 style={{ color: "green", marginTop: "0.5rem" }}>
+            {searchedJobs.length} jobs found
+          </h4>
         </SaveSearch>
         {isLoading ? (
           <Spinner />

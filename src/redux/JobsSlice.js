@@ -7,6 +7,7 @@ const initialState = {
   recentJobs: [],
   savedJobs: [],
   searchedJobs: [],
+  history: [],
   isLoading: false,
   error: null,
 };
@@ -41,10 +42,16 @@ export const jobsSlice = createSlice({
         ),
       ];
     },
+    getHistory: (state, action) => {},
     saveJob: (state, action) => {
       const jobId = action.payload.id;
       if (!state.savedJobs.some((job) => job.id === jobId)) {
         state.savedJobs.push(action.payload);
+      }
+    },
+    addRecentSearch: (state, action) => {
+      if (!state.history.includes(action.payload)) {
+        state.history.push(action.payload);
       }
     },
     setLoading: (state, action) => {
@@ -63,11 +70,14 @@ export const {
   getJobs,
   saveJob,
   getSearchedJobs,
+
+  addRecentSearch,
   getRecentJobs,
   setLoading,
   setTotalCount,
   setError,
 } = jobsSlice.actions;
+//===================================================
 export const getAllJobs = (page) => async (dispatch) => {
   dispatch(setLoading(true));
   try {
@@ -84,6 +94,7 @@ export const getAllJobs = (page) => async (dispatch) => {
     dispatch(setLoading());
   }
 };
+//====================================================
 export const getAllRecentJobs = (page) => async (dispatch) => {
   dispatch(setLoading(true));
   try {
@@ -99,8 +110,45 @@ export const getAllRecentJobs = (page) => async (dispatch) => {
     dispatch(setLoading());
   }
 };
+//======================================================
+export const sendSearchHistory = (query) => async (dispatch) => {
+  const id = localStorage.getItem("id");
+  try {
+    const response = await axios.post(
+      `http://localhost:3001/users/${id}/history`,
+      { query }
+    );
+    if (response) {
+      dispatch(addRecentSearch(response.data));
+    }
+  } catch (error) {
+    dispatch(setError(error.message));
+  } finally {
+    dispatch(setLoading());
+  }
+};
+//========================================================
+export const getHistory = () => async (dispatch, getState) => {
+  const id = localStorage.getItem("id");
+
+  try {
+    const response = await axios.get(
+      `http://localhost:3001/users/${id}/history`
+    );
+    if (response) {
+      dispatch(addRecentSearch(response.data));
+      console.log(response.data);
+    }
+  } catch (error) {
+    dispatch(setError(error.message));
+  } finally {
+    dispatch(setLoading());
+  }
+};
+//========================================================
 export const getAllSearchedJobs = (query) => async (dispatch) => {
   dispatch(setLoading(true));
+  dispatch(addRecentSearch(query));
   try {
     const response = await axios.get(
       `http://localhost:3001/jobs?topic_like=${query}`
@@ -114,6 +162,7 @@ export const getAllSearchedJobs = (query) => async (dispatch) => {
     dispatch(setLoading());
   }
 };
+//=========================================================
 export const filterJobs = (filter, query, searched) => async (dispatch) => {
   dispatch(setLoading(true));
   try {
