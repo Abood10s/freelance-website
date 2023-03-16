@@ -69,21 +69,21 @@ const Home = () => {
               <StyledLink
                 to={`${PATHS.BESTMATCHES}`}
                 end
-                activeClassName="active"
+                activeclassname="active"
               >
                 Best Matches
               </StyledLink>
               <StyledLink
                 to={`${PATHS.MOSTRECENT}`}
                 end
-                activeClassName="active"
+                activeclassname="active"
               >
                 Most Recent
               </StyledLink>
               <StyledLink
                 to={`${PATHS.SAVEDJOBS}`}
                 end
-                activeClassName="active"
+                activeclassname="active"
               >
                 Saved Jobs ({saved.length})
               </StyledLink>

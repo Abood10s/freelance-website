@@ -13,7 +13,7 @@ export const Spin = keyframes`
       transform: rotate(360deg);
     }
 `;
-export const Spinner = styled.div`
+export const Spinner = styled.p`
   display: block;
   margin: 0.3rem auto;
   width: 40px;

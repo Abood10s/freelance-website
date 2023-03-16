@@ -18,7 +18,7 @@ const OnlineStatus = ({ editable = "true" }) => {
   return (
     <Content>
       <Available>Available now</Available>
-      <small>off</small>
+      <span>off</span>
       {editable === "true" ? (
         <Profileicon>
           <EditSvg />
