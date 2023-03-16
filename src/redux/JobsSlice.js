@@ -70,7 +70,6 @@ export const {
   getJobs,
   saveJob,
   getSearchedJobs,
-
   addRecentSearch,
   getRecentJobs,
   setLoading,
@@ -111,41 +110,6 @@ export const getAllRecentJobs = (page) => async (dispatch) => {
   }
 };
 //======================================================
-export const sendSearchHistory = (query) => async (dispatch) => {
-  const id = localStorage.getItem("id");
-  try {
-    const response = await axios.post(
-      `http://localhost:3001/users/${id}/history`,
-      { query }
-    );
-    if (response) {
-      dispatch(addRecentSearch(response.data));
-    }
-  } catch (error) {
-    dispatch(setError(error.message));
-  } finally {
-    dispatch(setLoading());
-  }
-};
-//========================================================
-export const getHistory = () => async (dispatch, getState) => {
-  const id = localStorage.getItem("id");
-
-  try {
-    const response = await axios.get(
-      `http://localhost:3001/users/${id}/history`
-    );
-    if (response) {
-      dispatch(addRecentSearch(response.data));
-      console.log(response.data);
-    }
-  } catch (error) {
-    dispatch(setError(error.message));
-  } finally {
-    dispatch(setLoading());
-  }
-};
-//========================================================
 export const getAllSearchedJobs = (query) => async (dispatch) => {
   dispatch(setLoading(true));
   dispatch(addRecentSearch(query));

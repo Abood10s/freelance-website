@@ -38,7 +38,7 @@ const Search = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getAllSearchedJobs(query));
-    dispatch(sendSearchHistory(query));
+    // dispatch(sendSearchHistory(query));
   }, [query]);
   return (
     <Wrapper reverse={true} border={true}>

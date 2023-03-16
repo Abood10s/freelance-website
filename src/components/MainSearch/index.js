@@ -1,12 +1,6 @@
-import { letterSpacing } from "@mui/system";
-import React, { useContext, useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import {
-  getHistory,
-  getSearchHistory,
-  sendSearchHistory,
-} from "../../redux/JobsSlice";
 
 import { Input, SearchContainer, SearchIcon } from "./style";
 
@@ -14,11 +8,6 @@ const MainSearch = () => {
   const [query, setQuery] = useState("");
   const { history } = useSelector((state) => state.jobs);
 
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(sendSearchHistory(query));
-    dispatch(getHistory());
-  }, [query]);
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <SearchContainer>

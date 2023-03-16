@@ -22,6 +22,7 @@ export const userSlice = createSlice({
   },
 });
 export const { setUser, setLoading, setError } = userSlice.actions;
+//=============================================================
 
 export const getUserInfo = () => async (dispatch) => {
   const id = localStorage.getItem("id");
@@ -38,6 +39,7 @@ export const getUserInfo = () => async (dispatch) => {
     dispatch(setLoading());
   }
 };
+//=============================================================
 export const EditField = (field, value) => async (dispatch) => {
   const id = localStorage.getItem("id");
   dispatch(setLoading(true));

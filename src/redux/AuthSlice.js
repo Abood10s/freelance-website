@@ -24,6 +24,8 @@ export const AuthSlice = createSlice({
   },
 });
 export const { setAuth, setLoading, setError } = AuthSlice.actions;
+//=============================================================
+
 export const handleAuth = (email, password) => async (dispatch) => {
   dispatch(setLoading(true));
   try {
