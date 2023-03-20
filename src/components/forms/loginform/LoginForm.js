@@ -8,7 +8,7 @@ import SubmitBtn from "../../SubmitBtn";
 import * as Yup from "yup";
 import { handleAuth } from "../../../redux/AuthSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Input, InputWrapper } from "../forminput/style";
 import FormFooter from "../../FormFooter";
 import { Spinner } from "../../../global/style";
@@ -21,7 +21,8 @@ const Schema = Yup.object().shape({
 });
 
 const LoginForm = () => {
-  const { isLoading, authenticated } = useSelector((state) => state.auth);
+  const { isLoading } = useSelector((state) => state.auth);
+  let authenticated = localStorage.getItem("authenticated");
   const navigate = useNavigate();
   const dispatch = useDispatch();
   useEffect(() => {
@@ -94,6 +95,9 @@ const LoginForm = () => {
             <i className="fa-brands fa-apple"></i>
           </FormBtn>
           <Divider text="Don't have an Upwork account?" line="18%" />
+          <Link to="/signup" style={{ textDecoration: "none", color: "green" }}>
+            Sign up
+          </Link>
           <SubmitBtn loading={isLoading} />
         </FormContainer>
       </FormWrapper>

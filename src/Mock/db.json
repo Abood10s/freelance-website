@@ -7,7 +7,10 @@
             "jobTitle": "Front End Developer ",
             "overview": "Frontend Developer | React js | I help you build modern and responsive websites that engage users and drive results",
             "hourlyRate": "10",
-            "history": ["react", "vue"]
+            "history": [
+                "react",
+                "vue"
+            ]
         },
         {
             "id": 2,
@@ -55,7 +58,7 @@
             "email": "test@test.com",
             "password": "test123",
             "jobTitle": "Back end Developer c#",
-            "overview": "haha",
+            "overview": "developing web apps backend",
             "hourlyRate": "35",
             "history": []
         },
@@ -68,6 +71,286 @@
             "overview": "Gaza Sky Geeks Graduate",
             "hourlyRate": "35",
             "history": []
+        },
+        {
+            "name": "Lane King",
+            "email": "jaxecemisi@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 8
+        },
+        {
+            "name": "Illana Snyder",
+            "email": "xifuzari@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 9
+        },
+        {
+            "name": "Xena Lowe",
+            "email": "kysukewa@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": "80",
+            "history": [],
+            "id": 10
+        },
+        {
+            "name": "Desiree Gates",
+            "email": "viwosa@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 11
+        },
+        {
+            "name": "Hadley Ellis",
+            "email": "ficu@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 12
+        },
+        {
+            "name": "Maisie Haley",
+            "email": "kikuhamem@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 13
+        },
+        {
+            "name": "Colleen Dominguez",
+            "email": "velof@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 14
+        },
+        {
+            "name": "Liberty Prince",
+            "email": "zudu@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 15
+        },
+        {
+            "name": "Tallulah Patrick",
+            "email": "nonyzy@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 16
+        },
+        {
+            "name": "Dora Brooks",
+            "email": "kakyqasuve@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 17
+        },
+        {
+            "name": "Leslie Mejia",
+            "email": "hiqimiryxo@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 18
+        },
+        {
+            "name": "Bradley Hatfield",
+            "email": "mazofyce@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 19
+        },
+        {
+            "name": "Clare Dawson",
+            "email": "vahe@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 20
+        },
+        {
+            "name": "Harlan Carey",
+            "email": "ropa@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 21
+        },
+        {
+            "name": "Charissa Payne",
+            "email": "xijav@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 22
+        },
+        {
+            "name": "Yasir Butler",
+            "email": "dylutu@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 23
+        },
+        {
+            "name": "Oprah Taylor",
+            "email": "fove@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 24
+        },
+        {
+            "name": "Camille Marshall",
+            "email": "sikafahu@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 25
+        },
+        {
+            "name": "Lee Pollard",
+            "email": "kyduquke@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 26
+        },
+        {
+            "name": "Zachary Spencer",
+            "email": "vykuh@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 27
+        },
+        {
+            "name": "Zenaida Fisher",
+            "email": "duqusofa@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 28
+        },
+        {
+            "name": "Kasper Cross",
+            "email": "xycyxokeh@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 29
+        },
+        {
+            "name": "Hedy Soto",
+            "email": "dohape@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 30
+        },
+        {
+            "name": "Brock Hardin",
+            "email": "qyzehu@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 31
+        },
+        {
+            "name": "Ann Molina",
+            "email": "ludobys@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 32
+        },
+        {
+            "name": "Marah Christian",
+            "email": "jyfe@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 33
+        },
+        {
+            "name": "Bruce Henry",
+            "email": "bemek@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 34
+        },
+        {
+            "name": "Lane Gregory",
+            "email": "xyjuve@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 35
         }
     ],
     "jobs": [{

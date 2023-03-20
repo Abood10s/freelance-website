@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Spinner } from "../../global/style";
 
 const Btn = styled.button`
   color: #fff;
@@ -13,8 +14,13 @@ const Btn = styled.button`
   cursor: pointer;
 `;
 
-const PrimaryBtn = ({ title, func }) => {
-  return <Btn onClick={func}>{title}</Btn>;
+const PrimaryBtn = ({ title, func, submit, loading }) => {
+  return (
+    <Btn type={`${submit ? submit : ""}`} onClick={func}>
+      {/* {title} */}
+      {loading ? <Spinner /> : title}
+    </Btn>
+  );
 };
 
 export default PrimaryBtn;

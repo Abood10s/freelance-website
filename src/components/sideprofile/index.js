@@ -27,7 +27,7 @@ const SideProfile = ({ name, jobTitle }) => {
             {name ? name : <Spinner />}
           </h4>
         </Link>
-        <p>{jobTitle ? jobTitle : <Spinner />}</p>
+        <p>{jobTitle ? jobTitle : "No job Title yet"}</p>
       </Info>
       <Completeness>
         <h5>Profile Completeness:</h5>

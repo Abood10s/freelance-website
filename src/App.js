@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 
 import { COLORS } from "./global";
 import { lazy, Suspense, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { setAuth } from "./redux/AuthSlice";
 import { router as routes } from "./Routes";
 import { Spinner } from "./global/style";
@@ -17,7 +17,7 @@ const theme = {
 
 function App() {
   const dispatch = useDispatch();
-  const { authenticated } = useSelector((state) => state.auth);
+  let authenticated = localStorage.getItem("authenticated");
   const router = useRoutes(routes);
   const id = localStorage.getItem("id");
   useEffect(() => {

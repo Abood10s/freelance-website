@@ -46,6 +46,24 @@ export const handleAuth = (email, password) => async (dispatch) => {
     dispatch(setLoading());
   }
 };
-
+//=============================================================
+export const signup = (user) => async (dispatch) => {
+  dispatch(setLoading(true));
+  try {
+    const res = await axios.post("http://localhost:3001/users", user);
+    if (res.data) {
+      dispatch(setLoading());
+      dispatch(setAuth(true));
+      localStorage.setItem("id", `${res.data[0].id}`);
+      localStorage.setItem("authenticated", true);
+      dispatch(setUser(...res.data[0]));
+    }
+  } catch (error) {
+    dispatch(setLoading());
+    dispatch(setError(error.message));
+  } finally {
+    dispatch(setLoading());
+  }
+};
 export const authReducer = AuthSlice.reducer;
 export default AuthSlice.reducer;
