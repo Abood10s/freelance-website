@@ -23,8 +23,12 @@ const Option = styled.p`
     background-color: #babdba;
   }
 `;
-const Divider = ({ text = "or", line }) => {
-  return <Option line={line}>{text}</Option>;
+const Divider = ({ text = "or", line, comp }) => {
+  return (
+    <Option line={line}>
+      {text} {comp}
+    </Option>
+  );
 };
 
 export default Divider;

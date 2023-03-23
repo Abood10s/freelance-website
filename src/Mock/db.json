@@ -351,6 +351,16 @@
             "hourlyRate": 0,
             "history": [],
             "id": 35
+        },
+        {
+            "name": "Xaviera Wise",
+            "email": "hyradoxa@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "jobTitle": "",
+            "overview": "",
+            "hourlyRate": 0,
+            "history": [],
+            "id": 36
         }
     ],
     "jobs": [{
@@ -361,7 +371,15 @@
             "proposals": "25+",
             "payment": "Payment verified",
             "location": "United States",
-            "level": "intermediate"
+            "level": "intermediate",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 2,
@@ -371,7 +389,15 @@
             "proposals": "20 to 50",
             "payment": "Payment verified",
             "location": "world wide",
-            "level": "intermediate"
+            "level": "intermediate",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 3,
@@ -381,7 +407,15 @@
             "proposals": "50+",
             "payment": "Payment verified",
             "location": "United States",
-            "level": "Entry level"
+            "level": "Entry level",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 4,
@@ -391,7 +425,15 @@
             "proposals": "35",
             "payment": "Payment verified",
             "location": "Australia",
-            "level": "expert"
+            "level": "expert",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 5,
@@ -401,7 +443,15 @@
             "proposals": "25+",
             "payment": "Payment verified",
             "location": "Czech Republic",
-            "level": "intermediate"
+            "level": "intermediate",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 6,
@@ -411,7 +461,15 @@
             "proposals": "25+",
             "payment": "Payment verified",
             "location": "United States",
-            "level": "Entry level"
+            "level": "Entry level",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 7,
@@ -421,7 +479,15 @@
             "proposals": "20 to 50",
             "payment": "Payment verified",
             "location": "world wide",
-            "level": "intermediate"
+            "level": "intermediate",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 8,
@@ -431,7 +497,15 @@
             "proposals": "50+",
             "payment": "Payment verified",
             "location": "United States",
-            "level": "expert"
+            "level": "expert",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 9,
@@ -441,7 +515,15 @@
             "proposals": "35",
             "payment": "Payment verified",
             "location": "Australia",
-            "level": "expert"
+            "level": "expert",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 10,
@@ -451,7 +533,15 @@
             "proposals": "25+",
             "payment": "Payment verified",
             "location": "Czech Republic",
-            "level": "expert"
+            "level": "expert",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 11,
@@ -461,7 +551,15 @@
             "proposals": "25+",
             "payment": "Payment verified",
             "location": "United States",
-            "level": "expert"
+            "level": "expert",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 12,
@@ -471,7 +569,15 @@
             "proposals": "20 to 50",
             "payment": "Payment verified",
             "location": "world wide",
-            "level": "expert"
+            "level": "expert",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 13,
@@ -481,7 +587,15 @@
             "proposals": "less than 5",
             "payment": "Payment verified",
             "location": "United States",
-            "level": "expert"
+            "level": "expert",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 14,
@@ -491,7 +605,15 @@
             "proposals": "20 to 50",
             "payment": "Payment verified",
             "location": "Australia",
-            "level": "expert"
+            "level": "expert",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 15,
@@ -501,7 +623,15 @@
             "proposals": "25+",
             "payment": "Payment verified",
             "location": "Czech Republic",
-            "level": "expert"
+            "level": "expert",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 16,
@@ -511,7 +641,15 @@
             "proposals": "20 to 50",
             "payment": "Payment verified",
             "location": "Czech Republic",
-            "level": "expert"
+            "level": "expert",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 17,
@@ -521,7 +659,15 @@
             "proposals": "10 to 15",
             "payment": "Payment verified",
             "location": "Canada",
-            "level": "expert"
+            "level": "expert",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 18,
@@ -531,7 +677,15 @@
             "proposals": "5 to 10",
             "payment": "Payment verified",
             "location": "United Kingdom",
-            "level": "expert"
+            "level": "expert",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 19,
@@ -541,7 +695,15 @@
             "proposals": "5 to 10",
             "payment": "Payment verified",
             "location": "United States",
-            "level": "expert"
+            "level": "expert",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 20,
@@ -551,7 +713,15 @@
             "proposals": "less than 5",
             "payment": "Payment verified",
             "location": "Australia",
-            "level": "expert"
+            "level": "expert",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 21,
@@ -561,7 +731,15 @@
             "proposals": "5 to 10",
             "payment": "Payment verified",
             "location": "India",
-            "level": "expert"
+            "level": "expert",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 22,
@@ -571,7 +749,15 @@
             "proposals": "15 to 20",
             "payment": "Payment verified",
             "location": "Spain",
-            "level": "expert"
+            "level": "expert",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         },
         {
             "id": 23,
@@ -581,7 +767,15 @@
             "proposals": "20 to 50",
             "payment": "Payment verified",
             "location": "United States",
-            "level": "Entry level"
+            "level": "Entry level",
+            "skills": [
+                "html",
+                "react",
+                "Dtabase",
+                "#asp",
+                "vuejs3",
+                "Laravel 9"
+            ]
         }
     ]
 }

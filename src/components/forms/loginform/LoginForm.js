@@ -94,10 +94,23 @@ const LoginForm = () => {
           <FormBtn bg="#fff" clr="#000" type="Apple">
             <i className="fa-brands fa-apple"></i>
           </FormBtn>
-          <Divider text="Don't have an Upwork account?" line="18%" />
-          <Link to="/signup" style={{ textDecoration: "none", color: "green" }}>
-            Sign up
-          </Link>
+          <Divider
+            text="Don't have an Upwork account?"
+            comp={
+              <Link
+                to="/signup"
+                style={{
+                  textDecoration: "none",
+                  color: "green",
+                  fontSize: "16px",
+                }}
+              >
+                Sign up
+              </Link>
+            }
+            line="12%"
+          />
+
           <SubmitBtn loading={isLoading} />
         </FormContainer>
       </FormWrapper>
