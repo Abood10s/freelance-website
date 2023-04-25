@@ -11,6 +11,9 @@ export const Cont = styled.div`
   align-items: flex-start;
   gap: 3rem;
   padding-bottom: 2em 1.5em;
+  @media (max-width: 800px) {
+    padding: 0.5em;
+  }
 `;
 export const Input = styled.input`
   border-radius: 6px;
@@ -48,7 +51,11 @@ const UpdateTitle = ({ job }) => {
         <Buttons>
           <PrimaryBtn
             title="Save"
-            func={() => dispatch(EditField("jobTitle", title))}
+            func={() => {
+              title !== job &&
+                title !== "" &&
+                dispatch(EditField("jobTitle", title));
+            }}
           />
         </Buttons>
       </Edit>

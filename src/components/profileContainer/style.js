@@ -5,18 +5,31 @@ export const Container = styled.div`
   margin: 1rem auto;
   border: 1px solid #e4ebe4;
   border-radius: 12px;
+  @media (max-width: 1200px) {
+    width: 90%;
+  }
 `;
 export const HeadSection = styled.div`
   display: flex;
   align-items: start;
   justify-content: space-between;
   padding: 1.5rem 2rem;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 `;
 export const MainSection = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding: 1.5rem 2rem;
+  @media (max-width: 1200px) {
+    grid-template-columns: 0.85fr;
+    margin-left: auto;
+  }
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
 `;
 export const Avatar = styled.div`
   background: ${`url(${avatar})`};
@@ -29,6 +42,10 @@ export const Avatar = styled.div`
   width: ${(props) => props.size || "80px"};
   height: ${(props) => props.size || "80px"};
   margin: auto;
+  @media (max-width: 1200px) {
+    width: 80px;
+    height: 70px;
+  }
 `;
 export const Online = styled.div`
   position: absolute;
@@ -60,23 +77,48 @@ export const Actions = styled.div`
   align-items: start;
   justify-content: center;
   gap: 1em;
+  @media (max-width: 1200px) {
+    width: 70%;
+    align-items: center;
+    gap: 0.5em;
+    margin: 1rem auto;
+  }
+  @media (max-width: 1200px) {
+    width: 90%;
+  }
 `;
 
 export const Flex1 = styled.div`
   display: flex;
   align-items: start;
   gap: 2rem;
+  @media (max-width: 1200px) {
+    gap: 1rem;
+  }
 `;
 export const Column1 = styled.div`
   border-right: 1px solid #e4ebe4;
+  @media (max-width: 1200px) {
+    border: 0;
+    width: 95%;
+    margin-left: auto;
+  }
 `;
 export const Column2 = styled.div`
   padding: 0.5rem;
+  @media (max-width: 1200px) {
+    border: 0;
+    width: 95%;
+    margin-left: auto;
+  }
 `;
 export const JobDescription = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 `;
 export const Section = styled.div`
   border-top: 1px solid #e4ebe4;

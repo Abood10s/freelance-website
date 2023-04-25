@@ -33,6 +33,14 @@ const StyledLink = styled(NavLink)`
   text-decoration: none;
   padding: 0.5rem 0;
 `;
+const ProfileContainer = styled.div`
+  @media (max-width: 1200px) {
+    display: none;
+  }
+`;
+const Holder = styled.div`
+  width: 100%;
+`;
 const Home = () => {
   const saved = useSelector((state) => state.jobs.savedJobs);
 
@@ -59,7 +67,7 @@ const Home = () => {
   return (
     <>
       <Wrapper>
-        <div>
+        <Holder>
           <Greeting name={name} />
           <MainSearch />
 
@@ -90,8 +98,8 @@ const Home = () => {
             </Tabs>
             <Outlet />
           </Feed>
-        </div>
-        <div>
+        </Holder>
+        <ProfileContainer>
           <Profile>
             <SideProfile name={name} jobTitle={jobTitle} />
           </Profile>
@@ -100,7 +108,7 @@ const Home = () => {
             desc="My Proposals"
             body="Looking for work? Browse jobs and get started on a proposal."
           />
-        </div>
+        </ProfileContainer>
       </Wrapper>
     </>
   );

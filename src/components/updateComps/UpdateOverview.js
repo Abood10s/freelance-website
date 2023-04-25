@@ -40,7 +40,11 @@ const UpdateOverview = ({ view }) => {
         <Buttons>
           <PrimaryBtn
             title="Save"
-            func={() => dispatch(EditField("overview", overview))}
+            func={() =>
+              overview !== view &&
+              overview !== "" &&
+              dispatch(EditField("overview", overview))
+            }
           />
         </Buttons>
       </Edit>

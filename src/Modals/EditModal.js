@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import ReactDOM from "react-dom";
-import PrimaryBtn from "../components/buttons/PrimaryBtn";
 const Modal = styled.div`
   background-color: #fff;
   padding: 1.5rem 2rem;
@@ -11,6 +10,12 @@ const Modal = styled.div`
   transform: translate(-50%, -50%);
   z-index: 1000;
   border-radius: ${(props) => props.theme.Global.borderRadius};
+  @media (max-width: 800px) {
+    width: 85%;
+  }
+  @media (max-width: 800px) {
+    width: 90%;
+  }
 `;
 const Overlay = styled.div`
   position: fixed;

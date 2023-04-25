@@ -14,14 +14,24 @@ export const Grid = styled.div`
   width: 90%;
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   color: #fff;
+  @media (max-width: 1200px) {
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+  }
 `;
 export const List = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 50%;
+  @media (max-width: 800px) {
+    margin: 2rem;
+    align-self: center;
+  }
 `;
 export const Social = styled.div`
   width: 75%;
@@ -29,12 +39,18 @@ export const Social = styled.div`
   justify-content: space-between;
   margin: 1rem 0;
   border-bottom: 1px solid #9aaa97;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 `;
 export const Icons = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
   margin: 1.5rem 0;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 `;
 export const Icon = styled.div`
   display: grid;

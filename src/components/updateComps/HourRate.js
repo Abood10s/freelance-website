@@ -44,7 +44,11 @@ const HourRate = ({ title, desc, disabled, value, update }) => {
         <Buttons>
           <PrimaryBtn
             title="Save"
-            func={() => dispatch(EditField("hourlyRate", hourly))}
+            func={() =>
+              hourly !== value &&
+              hourly !== "" &&
+              dispatch(EditField("hourlyRate", hourly))
+            }
           />
         </Buttons>
       )}

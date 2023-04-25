@@ -135,6 +135,7 @@ export const filterJobs = (filter, query, searched) => async (dispatch) => {
     );
     if (response) {
       dispatch(getSearchedJobs(response.data));
+      // filter = "";
     }
   } catch (error) {
     dispatch(setError(error.message));

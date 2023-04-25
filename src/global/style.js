@@ -7,6 +7,14 @@ export const Wrapper = styled.div`
   grid-template-columns: ${(props) => (props.reverse ? "1fr 3fr" : "3fr 1fr")};
   gap: 1.5em;
   padding: 1.5rem;
+  margin: auto;
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 `;
 export const Spin = keyframes`
  to {

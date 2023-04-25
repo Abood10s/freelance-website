@@ -2,14 +2,14 @@ import { useRoutes } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
 import { COLORS } from "./global";
-import { lazy, Suspense, useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setAuth } from "./redux/AuthSlice";
 import { router as routes } from "./Routes";
 import { Spinner } from "./global/style";
 
-const Navbar = lazy(() => import("./components/Navbar"));
-const Footer = lazy(() => import("./components/Footer"));
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const theme = {
   Global: COLORS,
@@ -28,17 +28,9 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        {authenticated && (
-          <Suspense fallback={<Spinner />}>
-            <Navbar />
-          </Suspense>
-        )}
+        {authenticated && <Navbar />}
         <Suspense fallback={<Spinner />}>{router}</Suspense>
-        {authenticated && (
-          <Suspense fallback={<Spinner />}>
-            <Footer />
-          </Suspense>
-        )}
+        {authenticated && <Footer />}
       </ThemeProvider>
     </div>
   );
