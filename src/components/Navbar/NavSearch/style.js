@@ -9,6 +9,9 @@ export const NavSearchContiner = styled.div`
   &:hover {
     background-color: #d5e0d5;
   }
+  @media (max-width: 1200px) {
+    order: 1;
+  }
 `;
 export const SearchInput = styled.input`
   border: none;

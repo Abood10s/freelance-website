@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import CustomizedMenus from "../../Menu/Menu";
-import { Holder, Jobs, NavSearchContiner, SearchInput } from "./style";
+import { Holder, NavSearchContiner, SearchInput } from "./style";
 
 const NavSearch = () => {
   const [query, setQuery] = useState("");

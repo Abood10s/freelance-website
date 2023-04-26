@@ -43,8 +43,8 @@ export const Avatar = styled.div`
   height: ${(props) => props.size || "80px"};
   margin: auto;
   @media (max-width: 1200px) {
-    width: 80px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
   }
 `;
 export const Online = styled.div`

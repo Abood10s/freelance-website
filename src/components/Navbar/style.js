@@ -1,19 +1,62 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 export const Nav = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.5rem;
+  @media (max-width: 1270px) {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+    padding: 0.5rem 1rem;
+  }
+`;
+export const HomeLogo = styled(Link)``;
+export const Mobilenav = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 25px;
+  width: 100%;
+  color: green;
+  @media (min-width: 1200px) {
+    display: none;
+  }
 `;
 export const NavFlex1 = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5em;
+  padding-bottom: 0.2rem;
+  @media (max-width: 1200px) {
+    display: none;
+  }
 `;
 export const NavFlex2 = styled.div`
   display: flex;
   align-items: center;
   gap: 1em;
+  overflow-x: auto;
+  padding-bottom: 0.2rem;
+  width: 100vw;
+
+  /* width */
+  ::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: green;
+    border-radius: 7px;
+  }
 `;
 export const Logout = styled.button`
   color: #fff;
@@ -27,4 +70,15 @@ export const Logout = styled.button`
   font-size: 15px;
   cursor: pointer;
   margin: 0.2rem auto;
+  @media (max-width: 1200px) {
+    order: 2;
+  }
+`;
+export const SVGS = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  @media (max-width: 1200px) {
+    order: 3;
+  }
 `;

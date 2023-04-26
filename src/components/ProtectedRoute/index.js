@@ -8,7 +8,6 @@ const ProtectedRoute = () => {
 
   useEffect(() => {
     const authenticated = localStorage.getItem("authenticated");
-
     if (!authenticated) {
       navigate(PATHS.LOGIN);
     } else {

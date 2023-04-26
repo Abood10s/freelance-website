@@ -11,7 +11,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { Input, InputWrapper } from "../forminput/style";
 import FormFooter from "../../FormFooter";
-import { Spinner } from "../../../global/style";
 
 const Schema = Yup.object().shape({
   email: Yup.string()

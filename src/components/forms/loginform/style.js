@@ -6,6 +6,10 @@ export const FormWrapper = styled.div`
   border-radius: 10px;
   margin: 2rem auto;
   padding: 1.5em;
+  @media (max-width: 768px) {
+    width: 90%;
+    padding: 1em;
+  }
 `;
 export const GoogleIcon = styled.div`
   display: grid;
@@ -25,8 +29,15 @@ export const FormContainer = styled.form`
   flex-direction: column;
   justify-content: center;
   gap: 1.5em;
+  @media (max-width: 768px) {
+    width: 85%;
+  }
 `;
 export const Error = styled.p`
   color: red;
   margin-bottom: 5px;
+  @media (max-width: 768px) {
+    width: 100%;
+    text-align: center;
+  }
 `;
