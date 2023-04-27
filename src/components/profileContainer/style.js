@@ -6,7 +6,7 @@ export const Container = styled.div`
   border: 1px solid #e4ebe4;
   border-radius: 12px;
   @media (max-width: 1200px) {
-    width: 90%;
+    width: 95%;
   }
 `;
 export const HeadSection = styled.div`
@@ -43,8 +43,8 @@ export const Avatar = styled.div`
   height: ${(props) => props.size || "80px"};
   margin: auto;
   @media (max-width: 1200px) {
-    width: 30px;
-    height: 30px;
+    width: 37px;
+    height: 37px;
   }
 `;
 export const Online = styled.div`
@@ -56,6 +56,10 @@ export const Online = styled.div`
   height: 15px;
   border-radius: 50%;
   padding: 0.2rem;
+  @media (max-width: 1200px) {
+    width: 10px;
+    height: 10px;
+  }
 `;
 export const EditAvatar = styled.div`
   position: absolute;
@@ -66,6 +70,9 @@ export const EditAvatar = styled.div`
   border-radius: 50%;
   border: 2px solid #e4ebe4;
   padding: 0.5rem;
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;
 export const Description = styled.div`
   display: flex;
@@ -94,6 +101,10 @@ export const Flex1 = styled.div`
   gap: 2rem;
   @media (max-width: 1200px) {
     gap: 1rem;
+  }
+  @media (max-width: 700px) {
+    gap: 1rem;
+    flex-direction: column;
   }
 `;
 export const Column1 = styled.div`

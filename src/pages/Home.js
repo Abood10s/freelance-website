@@ -14,6 +14,9 @@ const Feed = styled.div`
   border: 1px solid #e4ebe4;
   padding: 1rem;
   border-radius: 15px;
+  @media (max-width: 900px) {
+    padding: 0.5rem;
+  }
 `;
 const Profile = styled.div`
   border: 1px solid #e4ebe4;
@@ -22,11 +25,17 @@ const Profile = styled.div`
 `;
 const Text = styled.h2`
   margin: 0.5rem 0;
+  @media (max-width: 900px) {
+    font-size: 22px;
+  }
 `;
 const Tabs = styled.div`
   display: flex;
   align-items: center;
   gap: 1em;
+  @media (max-width: 900px) {
+    overflow-x: auto;
+  }
 `;
 const StyledLink = styled(NavLink)`
   color: green;

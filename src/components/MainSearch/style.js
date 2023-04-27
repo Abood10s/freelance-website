@@ -5,6 +5,7 @@ export const SearchContainer = styled.div`
   align-items: center;
   margin: 2rem 0;
   width: 100%;
+ */
 `;
 export const Input = styled.input`
   padding: 0.7rem 0.8rem;
@@ -15,6 +16,10 @@ export const Input = styled.input`
   outline: none;
   display: block;
   width: 100%;
+  transition: all linear 0.1s;
+  &:focus {
+    border: 1px solid green;
+  }
 `;
 export const SearchIcon = styled.div`
   padding: 0.7rem;

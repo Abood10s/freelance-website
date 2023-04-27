@@ -1,7 +1,6 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import { getDate } from "../GlobalFunctions";
-import { Container, DayAndDate, Personal } from "./style";
+import { Container, DayAndDate, Personal, SVG } from "./style";
 
 const Greeting = ({ name }) => {
   return (
@@ -18,7 +17,7 @@ const Greeting = ({ name }) => {
 
         <h2>Welcome back, {name}</h2>
       </Personal>
-      <svg
+      <SVG
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
         link="http://www.w3.org/1999/xlink"
@@ -169,7 +168,7 @@ const Greeting = ({ name }) => {
           points="73.37 44.52 139.57 2.14 65.72 40.45 65.72 64.36 73.37 44.52"
           fill="url(#airplanes-11-i-uid-2)"
         ></polygon>
-      </svg>
+      </SVG>
     </Container>
   );
 };

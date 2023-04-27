@@ -7,8 +7,8 @@ export const FormWrapper = styled.div`
   margin: 2rem auto;
   padding: 1.5em;
   @media (max-width: 768px) {
-    width: 90%;
-    padding: 1em;
+    width: 95%;
+    padding: 0.7em;
   }
 `;
 export const GoogleIcon = styled.div`
@@ -30,7 +30,7 @@ export const FormContainer = styled.form`
   justify-content: center;
   gap: 1.5em;
   @media (max-width: 768px) {
-    width: 85%;
+    width: 90%;
   }
 `;
 export const Error = styled.p`

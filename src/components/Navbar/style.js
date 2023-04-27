@@ -9,7 +9,7 @@ export const Nav = styled.div`
     flex-direction: column;
     gap: 1rem;
     align-items: stretch;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
   }
 `;
 export const HomeLogo = styled(Link)``;
@@ -22,6 +22,9 @@ export const Mobilenav = styled.div`
   color: green;
   @media (min-width: 1200px) {
     display: none;
+  }
+  @media (max-width: 900px) {
+    width: 95%;
   }
 `;
 export const NavFlex1 = styled.div`
@@ -39,11 +42,10 @@ export const NavFlex2 = styled.div`
   gap: 1em;
   overflow-x: auto;
   padding-bottom: 0.2rem;
-  width: 100vw;
 
   /* width */
   ::-webkit-scrollbar {
-    height: 8px;
+    height: 5px;
   }
 
   /* Track */

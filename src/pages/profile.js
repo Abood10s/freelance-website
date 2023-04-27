@@ -46,7 +46,7 @@ const Profile = () => {
     <Container>
       <HeadSection>
         <Flex1>
-          <Avatar>
+          <Avatar size="48px">
             <EditAvatar>
               <i
                 className="fa-solid fa-pen-to-square"

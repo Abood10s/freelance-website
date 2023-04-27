@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import JobModal from "../../Modals/JobModal";
 import { saveJob } from "../../redux/JobsSlice";
 import DislikeSvg from "../../SVGs/DislikeSvg";
@@ -34,7 +34,6 @@ const Job = ({
   location,
 }) => {
   const dispatch = useDispatch();
-  const saved = useSelector((state) => state.jobs.savedJobs);
 
   const [isOpen, setIsOpen] = useState(false);
   return (

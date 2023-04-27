@@ -4,10 +4,11 @@ import styled from "styled-components";
 import { setAuth } from "../../../redux/AuthSlice";
 
 const Nav = styled.div`
+  border-top: 3px solid green;
   position: fixed;
   transition: all ease 0.3s;
   background-color: #fff;
-  z-index: 1856;
+  z-index: 185856;
   top: 50px;
   width: 100%;
   bottom: 0;

@@ -31,6 +31,9 @@ export const Holder = styled.div`
   &:hover {
     background-color: #e4ebe4;
   }
+  @media (max-width: 800px) {
+    height: 2.2rem;
+  }
 `;
 export const Jobs = styled.p`
   padding: 0.3rem 0.7rem;

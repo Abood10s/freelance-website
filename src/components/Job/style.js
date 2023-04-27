@@ -12,11 +12,17 @@ export const JobContainer = styled.div`
   &:hover {
     background-color: #f2f7f2;
   }
+  @media (max-width: 900px) {
+    padding: 0.8rem 0.5rem;
+  }
 `;
 export const Flex1 = styled.div`
   display: grid;
   grid-template-columns: 90% 10%;
   align-items: center;
+  @media (max-width: 900px) {
+    grid-template-columns: 80% 20%;
+  }
 `;
 export const Flex2 = styled.div`
   display: flex;
@@ -34,6 +40,9 @@ export const Title = styled.h3`
     color: #108a18;
     text-decoration: underline;
   }
+  @media (max-width: 900px) {
+    font-size: 18px;
+  }
 `;
 export const PayInfo = styled.small``;
 export const Body = styled.p``;
@@ -41,6 +50,10 @@ export const Skills = styled.div`
   display: flex;
   align-items: center;
   gap: 1em;
+  @media (max-width: 900px) {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
 `;
 export const PayAndLocation = styled.div`
   display: flex;

@@ -9,6 +9,11 @@ export const Container = styled.div`
   margin: 1rem auto;
   color: #fff;
   border-radius: 10px;
+  @media (max-width: 900px) {
+    padding: 2rem 0.5rem;
+    width: 90%;
+    margin: 1rem auto;
+  }
 `;
 export const Grid = styled.div`
   width: 90%;
@@ -49,7 +54,7 @@ export const Icons = styled.div`
   gap: 1rem;
   margin: 1.5rem 0;
   @media (max-width: 1200px) {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 `;
 export const Icon = styled.div`

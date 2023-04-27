@@ -8,6 +8,11 @@ export const Container = styled.div`
   border-radius: ${(props) => props.theme.Global.borderRadius};
   border: 1px solid #ddd;
 `;
+export const SVG = styled.svg`
+  @media (max-width: 908px) {
+    display: none;
+  }
+`;
 export const DayAndDate = styled.div`
   display: flex;
   align-items: center;
