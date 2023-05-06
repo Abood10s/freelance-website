@@ -30,7 +30,7 @@ export const handleAuth = (email, password) => async (dispatch) => {
   dispatch(setLoading(true));
   try {
     const res = await axios.get(
-      `http://localhost:3001/users?email=${email}&password=${password}`
+      `https://mock-freelancing-website-api.onrender.com/users?email=${email}&password=${password}`
     );
     if (res.data.length > 0) {
       dispatch(setLoading());
@@ -50,7 +50,10 @@ export const handleAuth = (email, password) => async (dispatch) => {
 export const signup = (user) => async (dispatch) => {
   dispatch(setLoading(true));
   try {
-    const res = await axios.post("http://localhost:3001/users", user);
+    const res = await axios.post(
+      "https://mock-freelancing-website-api.onrender.com/users",
+      user
+    );
     if (res.data) {
       dispatch(setLoading());
       dispatch(setAuth(true));

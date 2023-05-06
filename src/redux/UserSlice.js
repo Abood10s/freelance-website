@@ -29,7 +29,9 @@ export const getUserInfo = () => async (dispatch) => {
 
   dispatch(setLoading(true));
   try {
-    const response = await axios.get(`http://localhost:3001/users/${id}`);
+    const response = await axios.get(
+      `https://mock-freelancing-website-api.onrender.com/users/${id}`
+    );
     if (response) {
       dispatch(setUser(response.data));
     }
@@ -44,13 +46,15 @@ export const EditField = (field, value) => async (dispatch) => {
   const id = localStorage.getItem("id");
   dispatch(setLoading(true));
   try {
-    const user = await axios.get(`http://localhost:3001/users/${id}`);
+    const user = await axios.get(
+      `https://mock-freelancing-website-api.onrender.com/users/${id}`
+    );
     const updatedUser = {
       ...user.data,
       [field]: value,
     };
     const response = await axios.put(
-      `http://localhost:3001/users/${id}`,
+      `https://mock-freelancing-website-api.onrender.com/users/${id}`,
       updatedUser
     );
     if (response) {

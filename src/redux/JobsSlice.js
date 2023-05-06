@@ -81,7 +81,7 @@ export const getAllJobs = (page) => async (dispatch) => {
   dispatch(setLoading(true));
   try {
     const response = await axios.get(
-      `http://localhost:3001/jobs?_page=${page}&_limit=5`
+      `https://mock-freelancing-website-api.onrender.com/jobs?_page=${page}&_limit=5`
     );
     if (response) {
       dispatch(getJobs(response.data));
@@ -98,7 +98,7 @@ export const getAllRecentJobs = (page) => async (dispatch) => {
   dispatch(setLoading(true));
   try {
     const response = await axios.get(
-      `http://localhost:3001/jobs?_sort=id&_order=desc&_page=${page}&_limit=5`
+      `https://mock-freelancing-website-api.onrender.com/jobs?_sort=id&_order=desc&_page=${page}&_limit=5`
     );
     if (response) {
       dispatch(getRecentJobs(response.data));
@@ -115,7 +115,7 @@ export const getAllSearchedJobs = (query) => async (dispatch) => {
   dispatch(addRecentSearch(query));
   try {
     const response = await axios.get(
-      `http://localhost:3001/jobs?topic_like=${query}`
+      `https://mock-freelancing-website-api.onrender.com/jobs?topic_like=${query}`
     );
     if (response) {
       dispatch(getSearchedJobs(response.data));
@@ -131,7 +131,7 @@ export const filterJobs = (filter, query, searched) => async (dispatch) => {
   dispatch(setLoading(true));
   try {
     const response = await axios.get(
-      `http://localhost:3001/jobs?topic_like=${searched}&${filter}_like=${query}`
+      `https://mock-freelancing-website-api.onrender.com/jobs?topic_like=${searched}&${filter}_like=${query}`
     );
     if (response) {
       dispatch(getSearchedJobs(response.data));

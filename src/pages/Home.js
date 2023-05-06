@@ -59,7 +59,9 @@ const Home = () => {
   const id = localStorage.getItem("id");
   const fetchData = useCallback(async () => {
     try {
-      const response = await axios.get(`http://localhost:3001/users/${id}`);
+      const response = await axios.get(
+        `https://mock-freelancing-website-api.onrender.com/users/${id}`
+      );
       if (response) {
         setName(response.data.name);
         setJobTitle(response.data.jobTitle);
