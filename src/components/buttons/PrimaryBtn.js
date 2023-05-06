@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { Spinner } from "../../global/style";
 
 const Btn = styled.button`
-  color: #fff;
   background-color: ${(props) => props.theme.Global.txtGreen};
+  color: #fff;
   padding: 0.8em 1.5em;
   border-radius: 50px;
   white-space: nowrap;
@@ -12,6 +12,9 @@ const Btn = styled.button`
   font-weight: bold;
   font-size: 15px;
   cursor: pointer;
+  @media (max-width: 800px) {
+    padding: 0.8em 1em;
+  }
 `;
 
 const PrimaryBtn = ({ title, func, submit, loading }) => {

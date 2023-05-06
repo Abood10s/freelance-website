@@ -21,6 +21,10 @@ const Modal = styled.div`
   border-radius: ${(props) => props.theme.Global.borderRadius};
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  overflow-y: auto;
+  @media (max-width: 768px) {
+    left: 15%;
+  }
 `;
 const Flex = styled.div`
   display: flex;
@@ -34,6 +38,9 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 2.5fr 1fr;
   overflow: hidden;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 const Col1 = styled.div`
   border-radius: ${(props) => props.theme.Global.borderRadius};

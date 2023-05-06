@@ -10,6 +10,7 @@ const TextArea = styled.textarea`
   border-radius: 8px;
   width: 100%;
   resize: vertical;
+  padding: 0.5rem;
 `;
 const UpdateOverview = ({ view }) => {
   const dispatch = useDispatch();
@@ -37,7 +38,7 @@ const UpdateOverview = ({ view }) => {
           onChange={(e) => setOverview(e.target.value)}
         ></TextArea>
 
-        <Buttons>
+        <Buttons mt="2rem">
           <PrimaryBtn
             title="Save"
             func={() =>

@@ -37,7 +37,7 @@ const Accordion = ({ title, data, filter, searched }) => {
                   type="checkbox"
                   id={item}
                   value={item}
-                  // onChange={() => dispatch(filterJobs(filter, item, searched))}
+                  style={{ accentColor: "green" }}
                   onClick={() => handleCheckboxClick(item)}
                   defaultChecked={isChecked}
                 />

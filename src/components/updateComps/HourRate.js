@@ -11,15 +11,25 @@ const Cont = styled.div`
   align-items: center;
   width: 100%;
   padding: 1rem;
+  @media (max-width: 800px) {
+    font-size: 15px;
+    padding: 0.5rem;
+  }
 `;
 const Desc = styled.div``;
-const Inputs = styled.div``;
+const Inputs = styled.div`
+  display: flex;
+  align-items: center;
+`;
 const HourInput = styled.input`
   border-radius: 6px;
   padding: 0.5rem;
   border-bottom: 2px solid ${(props) => props.theme.Global.borderColor};
   outline: none;
   text-align: end;
+  @media (max-width: 800px) {
+    width: 45px;
+  }
 `;
 
 const HourRate = ({ title, desc, disabled, value, update }) => {
@@ -30,7 +40,7 @@ const HourRate = ({ title, desc, disabled, value, update }) => {
     <Cont>
       <Desc>
         <h4>{title}</h4>
-        {desc ? <p>{desc}</p> : null}
+        {desc ? <p> {desc} </p> : null}
       </Desc>
       <Inputs>
         <HourInput

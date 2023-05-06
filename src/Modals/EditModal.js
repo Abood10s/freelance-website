@@ -10,10 +10,9 @@ const Modal = styled.div`
   transform: translate(-50%, -50%);
   z-index: 1000;
   border-radius: ${(props) => props.theme.Global.borderRadius};
+  overflow-y: auto;
   @media (max-width: 800px) {
-    width: 85%;
-  }
-  @media (max-width: 800px) {
+    padding: 1rem 1.5rem;
     width: 90%;
   }
 `;
@@ -28,7 +27,8 @@ const Content = styled.div`
   place-items: center;
 `;
 export const Buttons = styled.div`
-  margin-top: 2rem;
+  margin-top: ${(props) => props.mt};
+  margin-left: 0.5rem;
   display: flex;
   justify-content: end;
   align-items: center;

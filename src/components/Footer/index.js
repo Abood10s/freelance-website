@@ -72,7 +72,7 @@ const Footer = () => {
           </Icon>
         </Icons>
       </Social>
-      <div>© 2015 - 2023 Upwork® Global Inc.</div>
+      <div>© 2015 - 2023 Topwork Global Inc.</div>
     </Container>
   );
 };

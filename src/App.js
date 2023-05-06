@@ -25,6 +25,7 @@ function App() {
       dispatch(setAuth(true));
     }
   }, [id]);
+
   return (
     <div className="App">
       <ThemeProvider theme={theme}>

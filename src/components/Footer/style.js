@@ -26,6 +26,9 @@ export const Grid = styled.div`
     justify-items: center;
     align-items: center;
   }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 export const List = styled.ul`
   list-style: none;
@@ -35,7 +38,6 @@ export const List = styled.ul`
   width: 50%;
   @media (max-width: 800px) {
     margin: 2rem;
-    align-self: center;
   }
 `;
 export const Social = styled.div`

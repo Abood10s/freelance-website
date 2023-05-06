@@ -9,10 +9,10 @@ export const Cont = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 3rem;
   padding-bottom: 2em 1.5em;
   @media (max-width: 800px) {
     padding: 0.5em;
+    gap: 1.5rem;
   }
 `;
 export const Input = styled.input`

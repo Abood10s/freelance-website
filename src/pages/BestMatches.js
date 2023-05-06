@@ -39,14 +39,14 @@ const BestMatches = () => {
   };
   return (
     <>
-      {isLoading ? (
+      {isLoading || !jobsData ? (
         <Spinner />
       ) : (
         jobsData?.map((job) => {
           return <Job key={job.id} {...job} skills={skills} theJob={job} />;
         })
       )}
-      {/* {page < 3 && <button onClick={handleNextPage}>Load More</button>}*/}
+
       {page < Math.ceil(totalCount / 5) && (
         <LoadMore onClick={handleNextPage}>Load More</LoadMore>
       )}
