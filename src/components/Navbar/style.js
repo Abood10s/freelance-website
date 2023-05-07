@@ -13,6 +13,15 @@ export const Nav = styled.div`
   }
 `;
 export const HomeLogo = styled(Link)``;
+export const LOGO = styled.img`
+  display: block;
+  height: 40px;
+  width: 160px;
+  object-fit: cover;
+  @media (max-width: 900px) {
+    height: 40px;
+  }
+`;
 export const Mobilenav = styled.div`
   display: flex;
   align-items: center;

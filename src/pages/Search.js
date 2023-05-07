@@ -16,7 +16,11 @@ export const Sorry = styled.div`
   flex-direction: column;
   align-items: center;
 `;
-
+const Accordios = styled.div`
+  @media (max-width: 1000px) {
+    order: 2;
+  }
+`;
 const JobsWrapper = styled.div`
   border: 1px solid ${(props) => props.theme.Global.borderColor};
   border-radius: ${(props) => props.theme.Global.borderRadius};
@@ -29,6 +33,9 @@ const SaveSearch = styled.div`
   display: grid;
   grid-template-columns: 3fr 1fr;
   padding: 0.5rem 1rem;
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
 `;
 const Search = () => {
   const { query } = useParams();
@@ -38,11 +45,10 @@ const Search = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getAllSearchedJobs(query));
-    // dispatch(sendSearchHistory(query));
   }, [query]);
   return (
     <Wrapper reverse={true} border={true}>
-      <div>
+      <Accordios>
         <h3>Filter By</h3>
         <Accordion
           title="Experience level"
@@ -64,12 +70,12 @@ const Search = () => {
           title="Client history"
           data={["No hires", "1 to 9 hires ", "10+ hires"]}
         />
-      </div>
+      </Accordios>
       <JobsWrapper>
         <SaveSearch>
           <MainSearch />
           <SubmitBtn text="Save search" />
-          <h4 style={{ color: "green", marginTop: "0.5rem" }}>
+          <h4 style={{ color: "green", marginTop: "0.3rem" }}>
             {searchedJobs.length} jobs found
           </h4>
         </SaveSearch>
@@ -81,7 +87,10 @@ const Search = () => {
           })
         ) : (
           <Sorry>
-            <ErrImg src={Noresults} alt="No results Were found" />
+            <ErrImg
+              src={Noresults}
+              alt="No results Were found on the search query"
+            />
             <p>sorry no results were found on "{query}"</p>
           </Sorry>
         )}

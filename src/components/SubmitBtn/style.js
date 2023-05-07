@@ -18,5 +18,6 @@ export const Button = styled.button`
   }
   @media (max-width: 1200px) {
     padding: 0.5em 0.3em;
+    width: fit-content;
   }
 `;

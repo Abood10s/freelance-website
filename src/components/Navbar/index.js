@@ -4,6 +4,7 @@ import { Avatar } from "../profileContainer/style";
 import NavSearch from "./NavSearch";
 import {
   HomeLogo,
+  LOGO,
   Logout,
   Mobilenav,
   Nav,
@@ -42,7 +43,7 @@ const Navbar = () => {
     <Nav>
       <Mobilenav>
         <HomeLogo to="/home">
-          <img src={topwork} alt="Topwork" />
+          <LOGO src={topwork} alt="Topwork logo" />
         </HomeLogo>
         {clicked ? (
           <FiX onClick={() => setClicked(!clicked)} />
@@ -53,7 +54,7 @@ const Navbar = () => {
       <PhoneNav show={clicked ? true : false} />
       <NavFlex1>
         <Link to="/home">
-          <img src={topwork} alt="Topwork" />
+          <LOGO src={topwork} alt="Topwork" />
         </Link>
         <CustomizedMenus name="Find Work" data={Findwork} />
         <CustomizedMenus name="My Jobs" data={Myjobs} />

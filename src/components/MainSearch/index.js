@@ -29,13 +29,21 @@ const MainSearch = () => {
         )}
       </SearchContainer>
       {history.length > 0 ? (
-        <div style={{ display: "flex", alignItems: "center", gap: "0.4rem" }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "0.4rem",
+            marginTop: "-1rem",
+            marginBottom: "0.5rem",
+          }}
+        >
           <span>Recent Searches:</span>
 
           {history?.map((item, index) => {
             return (
               <div key={index}>
-                <span style={{ color: "green" }}>{item}</span>
+                <span style={{ color: "green" }}>{item},</span>
               </div>
             );
           })}

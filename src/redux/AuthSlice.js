@@ -68,5 +68,7 @@ export const signup = (user) => async (dispatch) => {
     dispatch(setLoading());
   }
 };
+//=========================================================
+
 export const authReducer = AuthSlice.reducer;
 export default AuthSlice.reducer;

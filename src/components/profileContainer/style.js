@@ -70,7 +70,7 @@ export const EditAvatar = styled.div`
   border-radius: 50%;
   border: 2px solid #e4ebe4;
   padding: 0.5rem;
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
     display: none;
   }
 `;
@@ -85,13 +85,11 @@ export const Actions = styled.div`
   justify-content: center;
   gap: 1em;
   @media (max-width: 1200px) {
-    width: 70%;
+    width: 50%;
     align-items: center;
+    justify-content: start;
     gap: 0.5em;
-    margin: 1rem auto;
-  }
-  @media (max-width: 1200px) {
-    width: 90%;
+    margin: 1rem 0;
   }
 `;
 

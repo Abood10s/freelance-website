@@ -143,5 +143,6 @@ export const filterJobs = (filter, query, searched) => async (dispatch) => {
     dispatch(setLoading());
   }
 };
+//=========================================================
 export const jobsReducer = jobsSlice.reducer;
 export default jobsSlice.reducer;
