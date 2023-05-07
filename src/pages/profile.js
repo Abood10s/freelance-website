@@ -40,7 +40,7 @@ const Profile = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getUserInfo());
-  }, [jobTitle, name, jobTitle, hourlyRate, overview]);
+  }, [jobTitle, name, jobTitle, hourlyRate, overview, dispatch]);
 
   return (
     <Container>

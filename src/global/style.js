@@ -25,8 +25,8 @@ export const Spin = keyframes`
 export const Spinner = styled.p`
   display: block;
   margin: 0.3rem auto;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border: 5px solid rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   border-top-color: #108a00;

@@ -17,7 +17,6 @@ export const Button = styled.button`
     background-color: #f2f7f2;
   }
   @media (max-width: 1200px) {
-    padding: 0.5em 0.3em;
-    width: fit-content;
+    padding: 0.4em;
   }
 `;

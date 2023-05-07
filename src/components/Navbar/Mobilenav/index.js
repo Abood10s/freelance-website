@@ -48,6 +48,7 @@ const NavMobItem = styled.div`
 const LogOut = styled.h4`
   transition: all 0.2s ease;
   color: red;
+
   cursor: pointer;
   &:hover {
     background-color: red;
@@ -107,7 +108,10 @@ const PhoneNav = ({ show }) => {
             style={{
               width: "fit-content",
               textAlign: "center",
-              margin: "2rem auto",
+              marginTop: "2rem",
+              position: "absolute",
+              left: "50%",
+              transform: "translateX(-50%)",
               padding: "0.5rem",
               borderRadius: "5px",
               border: "1px solid red",

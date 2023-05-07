@@ -41,6 +41,9 @@ export const NavFlex1 = styled.div`
   align-items: center;
   gap: 0.5em;
   padding-bottom: 0.2rem;
+  @media (max-width: 1270px) {
+    justify-content: space-evenly;
+  }
   @media (max-width: 1200px) {
     display: none;
   }
@@ -49,9 +52,8 @@ export const NavFlex2 = styled.div`
   display: flex;
   align-items: center;
   gap: 1em;
-  overflow-x: auto;
   padding-bottom: 0.2rem;
-
+  overflow-x: auto;
   /* width */
   ::-webkit-scrollbar {
     height: 5px;
