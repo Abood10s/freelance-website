@@ -28,10 +28,7 @@ const BestMatches = () => {
   useEffect(() => {
     dispatch(getAllJobs(page));
   }, [page]);
-  // const handleNextPage = () => {
-  //   page < 3 ? setPage(page + 1) : setPage(3);
-  //   dispatch(getAllJobs(page + 1));
-  // };
+
   const handleNextPage = () => {
     page < Math.ceil(totalCount / 5)
       ? setPage(page + 1)

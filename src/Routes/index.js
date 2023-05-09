@@ -1,5 +1,6 @@
 import { lazy } from "react";
 import ProtectedRoute from "../components/ProtectedRoute";
+import { Navigate } from "react-router-dom";
 
 const Home = lazy(() => import("../pages/Home"));
 const Profile = lazy(() => import("../pages/profile"));
@@ -26,9 +27,9 @@ export const router = [
   { path: PATHS.SIGNUP, element: <Signup /> },
 
   {
-    path: "/",
     element: <ProtectedRoute />,
     children: [
+      { path: "/", element: <Navigate to={PATHS.HOME} /> },
       {
         path: PATHS.HOME,
         element: <Home />,

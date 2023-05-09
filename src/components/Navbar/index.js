@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import CustomizedMenus from "../Menu/Menu";
 import { Avatar } from "../profileContainer/style";
+import { PATHS } from "../../Routes/index";
+
 import NavSearch from "./NavSearch";
 import {
   HomeLogo,
@@ -42,7 +44,7 @@ const Navbar = () => {
   return (
     <Nav>
       <Mobilenav>
-        <HomeLogo to="/home">
+        <HomeLogo to={PATHS.HOME}>
           <LOGO src={topwork} alt="Topwork logo" />
         </HomeLogo>
         {clicked ? (
@@ -53,7 +55,7 @@ const Navbar = () => {
       </Mobilenav>
       <PhoneNav show={clicked ? true : false} />
       <NavFlex1>
-        <Link to="/home">
+        <Link to={PATHS.HOME}>
           <LOGO src={topwork} alt="Topwork" />
         </Link>
         <CustomizedMenus name="Find Work" data={Findwork} />
