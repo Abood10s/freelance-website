@@ -31,8 +31,8 @@ const LoginForm = () => {
   }, [authenticated, navigate]);
 
   const [values, setValues] = useState({
-    email: "",
-    password: "",
+    email: "test@test.com",
+    password: "test123",
   });
   const [errors, setErrors] = useState([]);
 
